@@ -1,0 +1,290 @@
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+body{
+    background-color: #0b0e3b;
+    color: rgb(235, 232, 240);
+
+    margin: 1rem;
+
+    display: grid;
+    grid-template-areas: 
+    "header     header      header      header"
+    "bio        bio     bio     bio"
+    "contact    contact     contact     contact"
+    "projects   projects    projects        projects"
+    "projects   projects    projects        projects"
+    "footer     footer      footer      footer";
+
+    font-family: 'Source Sans Pro, sans-serif';
+}
+
+@media screen and (min-width: 860px)
+{
+    body{
+        grid-template-areas: 
+        "header     header      header      header"
+        "bio        bio         bio     contact"
+        "projects   projects    projects     projects"
+        "projects   projects    projects     projects"
+        "footer     footer      footer      footer";
+    }
+}
+
+header{
+    background-color: #363775;
+
+    grid-area: header;
+
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-top: -1rem;
+    margin-bottom: 0.25rem;
+
+    padding: 0.5rem;
+}
+
+#title{
+    margin-left: 0.5rem;
+    margin-bottom: -1rem;
+    margin-top: -1rem;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #7762c5;
+    color: rgb(15, 15, 19);
+
+    margin-left: 0.5rem;
+    padding: 16px;
+    padding-top: 8px;
+
+    font-size: 20px;
+
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    width: 10rem;
+    height: 2.5rem;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #7469b6;
+    color: rgb(232, 229, 236);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: #596188;
+    border: #6358a1;
+
+    border-radius: 5px;
+    min-width: 160px;
+
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+    margin-left: 0.5rem;
+    width: 10rem;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+      background-color: #727899;
+      border-radius: 5px;
+    }
+  .show {display:block;}
+
+
+#bio{
+    background-color: #32395d;
+
+    grid-area: bio;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+
+    padding: 0.5rem;
+
+    text-align: center;
+    font-size: 22px;
+}
+
+#contact{
+    background-color: #32395d;
+
+    grid-area: contact;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 860px){
+    #contact{
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        margin-left: 0.50rem;
+        border-radius: 5px;
+    
+        padding: 0.5rem;
+    }
+}
+
+#projects{
+    background-color: #32395d;
+
+    grid-area: projects;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 5px;
+
+    padding: 0.5rem;
+}
+
+.project {
+    background-color: #424766;
+    border-radius: 5px;
+
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+
+    padding: 1rem;
+
+    text-align: center;
+}
+
+footer{
+    background-color: #2f3455;
+    color: rgb(199, 209, 221);
+
+    grid-area: footer;
+
+    margin: -1rem;
+    margin-top: 0.25rem;
+
+    padding: 0.5rem;
+}
+
+/* Standard Links */
+a:link{
+    color: #ca92ff;
+} 
+a:visited{
+    color: #b993dd;
+} 
+a:focus{
+    color: #b893fc;
+} 
+a:hover{
+    color: rgb(208, 140, 240);
+}
+a:active{
+    color: #e8acf0;
+}
+
+h1, h2, h3{
+    font-family: 'Rowdies', cursive;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+#contact h3{
+    margin-top: -0.25rem;
+}
+
+#projects h1{
+    margin-top: -0.25rem;
+}
+
+img{
+    border-radius: 5px;
+    border: #6264a1;
+    border-style: solid;
+    border-width: 3px;
+}
+
+header img{
+    float: right;
+    min-width: 10%;
+    max-width: 25%;
+
+    margin: -0.5rem;
+    border-radius: 0px;
+    border: none;
+}
+
+@media screen and (min-width: 640px){
+    header img{
+        float: right;
+        min-width: 10%;
+        max-width: 20%;
+    
+        margin: -0.5rem;
+    }
+}
+
+@media screen and (min-width: 1100px){
+    header img{
+        float: right;
+        max-width: 15%;
+    
+        margin: -0.5rem;
+        margin-top: -2rem;
+    }
+}
+
+#projects img{
+    width: 35%;
+}
+
+@media screen and (min-width: 860px){
+    #projects img{
+        width: 25%;
+    }
+}
+
+.project a:link{
+    color: rgb(229, 228, 236);
+} 
+.project a:visited{
+    color: rgb(199, 202, 206);
+} 
+.project a:focus{
+    color: rgb(235, 231, 241);
+} 
+.project a:hover{
+    color: rgb(189, 229, 253);
+}
+.project a:active{
+    color: rgb(176, 237, 255);
+}
+
+footer i{
+    font-size: 15px;
+}
