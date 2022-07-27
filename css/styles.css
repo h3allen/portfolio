@@ -130,7 +130,6 @@ header{
 
 #contact{
     background-color: #2c2d69;
-
     grid-area: contact;
 
     margin-top: 0.25rem;
@@ -144,11 +143,18 @@ header{
     #contact{
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
-        margin-left: 0.50rem;
+        margin-left: 20%;
         border-radius: 5px;
     
         padding: 0.5rem;
     }
+}
+#contact p{
+    text-align: center;
+    margin-bottom: 0.2rem;
+}
+#contact h3{
+    font-size: 25px;
 }
 
 #projects{
@@ -194,7 +200,7 @@ header{
 
 
 footer{
-    background-color: #2f3455;
+    background-color: #171734;
     color: rgb(199, 209, 221);
 
     grid-area: footer;
@@ -226,6 +232,10 @@ h1, h2, h3{
     font-family: 'Rowdies', cursive;
     font-weight: normal;
     font-size: 30px;
+}
+
+h2{
+    margin-top: 4rem;
 }
 
 h4{

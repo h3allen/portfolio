@@ -3,11 +3,12 @@ Portfolio website - all the files
 https://people.rit.edu/hea4002/
 
  ## Updates Needed
-- Update blurb (make it better)
+- Update blurb (make it better, boring right now)
 - Change background so that it is a starmap that follows where the mouse is on screen
 - Update contacts to be icons instead of text
 - Update Fish to better UI version
 - Modify mobile version
+- Aspect issue: 716.8px
 
  ### Projects
  - Add Apocalypta
