@@ -8,7 +8,6 @@ https://people.rit.edu/hea4002/
 - Update contacts to be icons instead of text
 - Update Fish to better UI version
 - Modify mobile version
-- Aspect issue: 716.8px
 
  ### Projects
  - Add Apocalypta
@@ -20,4 +19,3 @@ https://people.rit.edu/hea4002/
  - Image carosels or Flip cards
  - Subpages for WebGL builds
  - Subpages for longer projects? Include documentation for games that have it?
- - Change it so the boxes are floating in space

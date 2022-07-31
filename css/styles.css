@@ -3,9 +3,9 @@
     font-size: 18px;
 }
 body{
-    background-color: #0b0c2b;
-    color: rgb(235, 232, 240);
+    /* background-color: #0b0c2b; */
 
+    color: rgb(235, 232, 240);    
     margin: 3rem;
 
     display: grid;
@@ -33,7 +33,7 @@ body{
 }
 
 header{
-    background-color: #363775;
+    background-color: #243062;
 
     grid-area: header;
 
@@ -53,12 +53,12 @@ header{
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #504d9c;
+    background-color: #243062;
     color: rgb(232, 229, 236);
 
     margin-left: 0.5rem;
     padding: 16px;
-    padding-top: 8px;
+    padding-top: 5px;
 
     font-size: 20px;
 
@@ -66,12 +66,12 @@ header{
     cursor: pointer;
     border-radius: 5px;
 
-    width: 10rem;
-    height: 2.5rem;
+    width: 6rem;
+    height: 2rem;
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #514ab5;
+    background-color: #283666;
     color: rgb(232, 229, 236);
   }
   
@@ -85,7 +85,7 @@ header{
     display: none;
     position: absolute;
 
-    background-color: #293354;
+    background-color: #28366a;
     border: #6358a1;
 
     border-radius: 5px;
@@ -107,14 +107,14 @@ header{
   }
   
   .dropdown-content a:hover {
-      background-color: #727899;
+      background-color: #1e2c5c;
       border-radius: 5px;
     }
   .show {display:block;}
 
 
 #bio{
-    background-color: #2c2d69;
+    background-color: #1c2851;
 
     grid-area: bio;
 
@@ -129,7 +129,7 @@ header{
 }
 
 #contact{
-    background-color: #2c2d69;
+    background-color: #1c2851;
     grid-area: contact;
 
     margin-top: 0.25rem;
@@ -170,7 +170,7 @@ header{
 }
 
 .project {
-    background-color: #242554;
+    background-color: #1c2851;
     border-radius: 5px;
 
     margin-left: 3rem;
@@ -200,7 +200,7 @@ header{
 
 
 footer{
-    background-color: #171734;
+    background-color: #0d1736;
     color: rgb(199, 209, 221);
 
     grid-area: footer;
@@ -236,6 +236,9 @@ h1, h2, h3{
 
 h2{
     margin-top: 4rem;
+/*     background-color: rgb(5,8,31);
+    border-radius: 5px;
+    width: 10%; */
 }
 
 h4{
@@ -246,13 +249,20 @@ h4{
     margin-top: -0.25rem;
 }
 
+#contact a:link, a:visited, a:focus {
+    color: rgb(229, 228, 236);
+}
+#contact a:hover, a:active{
+    color: rgb(189, 229, 253);
+}
+
 #projects h1{
     margin-top: -0.25rem;
 }
 
 img{
     border-radius: 5px;
-    border: #6264a1;
+    border: #22305c;
     border-style: solid;
     border-width: 3px;
 }
@@ -288,7 +298,13 @@ header img{
 }
 
 #projects img{
-    width: 160%;
+    width: 100%;
+}
+@media screen and (min-width: 800px)
+{
+    #projects img{
+        width: 160%;
+    }
 }
 
 @media screen and (min-width: 860px){
