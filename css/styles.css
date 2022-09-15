@@ -144,8 +144,10 @@ header{
     #contact{
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
-        margin-left: 20%;
+        margin-left: 20rem;
         border-radius: 5px;
+        width: 8rem;
+        height: 6rem;
     
         padding: 0.5rem;
     }
