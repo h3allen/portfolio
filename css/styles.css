@@ -271,9 +271,6 @@ img{
 
 header img{
     float: right;
-    /* min-width: 10%;
-    max-width: 25%; */
-    /* height:fit-content; */
     width: 8rem;
 
     margin-bottom: -.25rem;

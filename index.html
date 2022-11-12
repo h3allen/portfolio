@@ -33,7 +33,13 @@
                   <!-- <a href="#">2D Art</a> -->
                   <a href="#misc">Miscellaneous</a>
                 </div>
-              </div>
+            </div>
+<!--             <div class="subpageLink">
+                <a href="subpages/academics.html">Academics</a>
+            </div>
+            <div class="subpageLink">
+                <a href="subpages/about.html">About</a>
+            </div> -->
 
             <img src="media/crow.png" alt="Crow digital painting">
         </header>
@@ -50,6 +56,8 @@
                 <a href="https://www.linkedin.com/in/holly-allen-7a04881b5/" target="_blank" rel="noopener">LinkedIn</a>
                 <br>
                 <a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                <br>
+                <a href="https://github.com/greembeems" target="_blank" rel="noopener">Github</a>
             </p>
         </div>
 
@@ -63,6 +71,11 @@
                     <img src="media/fish.png" alt="Fish main gameplay scene">
                     <p>
                         Fish was developed during a 6-day-long game jam using Unity Engine. The jam's theme was 'creature' and the team completed this aspect by creating a basic fishing simulator.
+                        As the player relaxes and casts their line into the water, they are accompanied by a friendly monster. The creature will only move when the player can't see them and will occasionally give the player advice, a fish fact, or tell a joke.
+                        We wanted to give the creature a very fatherly-feeling prescence without ever directly saying as such to our players.
+                        
+                        <br>Personally, I worked on the dialogue system as well as the menus and UI. The concept design for the creature was collaborative across all 4 team members as well as the lines of dialogue from the creature itself.
+                        I also polished up some of the code for the mechanics when the deadline approached as our gameplay programmer had to work during the jam.
                         <div class="date">June 2022</div>
                     </p>
                 </div>
@@ -83,10 +96,11 @@
                     <img src="media/hvz.png" alt="Humans vs. Zombies scene">
                     <p>
                         This project for RIT's Interactive Media Development [IGME 202] class utilizes steering behaviors to move the green cubes. 
-                        Zombies are randomly placed on the field. All objects in the scene are contained on the field using steering forces. The zombie cubes seek out the player and avoid one another and the white columns on screen. 
-                        After catching the player, all zombies wander the scene. The user can control the yellow cube and needs to avoid the green cubes on the screen. 
-                        The game times how long the player can avoid the zombies for. Collisions are tracked using circle collisions.
-                        It can be viewed <a href="https://igme-202-2211.github.io/project-3-greembeems/" target="_blank" rel="noopener">here</a>.
+                        The green cubes, zombies, are randomly placed on the field. All objects in the scene are contained on the field using steering forces. The user can control the yellow cube and needs to avoid the green cubes on the screen. 
+                        The zombie cubes seek out the player and avoid one another and any white columns on screen. 
+                        After catching the player, all zombies will wander around the scene. 
+                        The game times how long the player can avoid the zombies for. Collisions are tracked using sphere collisions.
+                        The project can be viewed <a href="https://igme-202-2211.github.io/project-3-greembeems/" target="_blank" rel="noopener">here</a>.
                         
                         <div class="date">November - December 2021</div>
                     </p>
@@ -119,6 +133,7 @@
                         The gameplay difficulty increases as the levels progress as more boxes spawn on screen for the player to collect in the same amount of time. 
                         I wrote all programs, developed, and created all visual assets.
                         It can be played <a href="https://people.rit.edu/hea4002/235/project-3/" target="_blank" rel="noopener">here</a>.
+                        Currently, it is running off of the most recent version of PIXI.js, which has had a large update that causes the game to not run. This will be fixed ASAP.
                     
                         <div class="date">November - December 2021</div>
                     </p>
@@ -130,7 +145,8 @@
                     <img src="media/trivia_2.png" alt="Questions pulled from the API">
                     <p>
                         Using the Open Trivia Database, found <a href="https://opentdb.com/" target="_blank" rel="noopener">here</a>, created a simple web page that generates trivia questions of varying topics and difficulties for the user. 
-                        Using the API's documentation, I created a website that would allow the user to select what types of questions they wish to answer, and submit the answers they believe to be correct to be scored.
+                        Using the API's documentation, I created a website that would allow the user to select what types of questions they wish to answer, and submit their answers to be scored.
+                        The score is kept during the session and increases as the player tries more questions. Some categories are only available in the "any" option to keep the dropdown menu clean as the API has many different categories for quesstions.
                         The project was created for RIT's Intro to Game Web Tech course [IGME 235].
                         It can be viewed <a href="https://people.rit.edu/hea4002/235/project-2/" target="_blank" rel="noopener">here</a>.
 
@@ -145,7 +161,10 @@
                     <h4>Apocalypta</h4>
                     <img src="media/apocalypta.png" alt="game setup of Apocalypta">
                     <p>
-                        Apocalypta was created as an academic project for Game Design and Development 1 [IGME 220]. With a team of 4 other students, 
+                        Apocalypta was created as an academic project for Game Design and Development 1 [IGME 220]. With a team of 4 other students, I designed a game focused around exploring a dungeon.
+                        Players were encouraged to take different strategies towards collecting the most treasure and making it out of the dungeon. We observed players keeping safe around the edges, players rushing the boss, and players battling it out with one another to steal treasure.
+                        Most of the stages of the gameplay went towards balancing the different possible playstyles, while keeping the overall theming lighthearted and fun.
+                        <br>I pitched the original concept and as a team, we tested, modified, and documented our process. I also worked on our visual design, particularly for our room cards. Our Game Design Document can be found <a href="media/apocalypta_gdd.pdf" target="_blank" rel="noopener"> here</a>.
 
                         <div class="date">January - May 2022</div>
                     </p>
@@ -165,6 +184,6 @@
             </div>
         </div>
 
-        <footer><i>Last Updated: July 27, 2022</i></footer>
+        <footer><i>Last Updated: November 12, 2022</i></footer>
     </body>
 </html>
