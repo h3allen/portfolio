@@ -46,6 +46,12 @@ header{
     padding-bottom: 0.25rem;
 }
 
+.navigation {
+    display: inline-grid;
+    grid-template-columns: "projects" "academics" "about";
+    column-gap: 0.5rem;
+}
+
 #title{
     margin-left: 0.5rem;
     margin-bottom: -1rem;
@@ -69,6 +75,10 @@ header{
 
     width: 6rem;
     height: 2rem;
+
+    grid-area: projects;
+    grid-column-start: 0;
+    grid-column-end: 1;
   }
   
   .dropbtn:hover, .dropbtn:focus {
@@ -113,6 +123,28 @@ header{
     }
   .show {display:block;}
 
+  .subpageLink a{
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  #academics {
+    grid-area: academics;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-top: -30px;
+    margin-left: 27%;
+
+  }
+
+  #about {
+    grid-area: about;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: -25px;
+    margin-left: 54%;
+    margin-bottom: -30px;
+  }
 
 #bio{
     background-color: #1c2851;
@@ -150,6 +182,7 @@ header{
         height: 6rem;
     
         padding: 0.5rem;
+        padding-bottom: 1rem;
     }
 }
 #contact p{
@@ -314,4 +347,37 @@ header img{
 footer i{
     font-size: 15px;
     margin-top: -1rem;
+}
+
+/* ACADEMICS */
+#current, #programming, #math, #art {
+    background-color: #1c2851;
+    border-radius: 5px;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+
+    padding-left: 0.5rem;
+    padding-right: -0.5rem;
+    padding-top: 0.001rem;
+    padding-bottom: 0.001rem;
+}
+
+#current li, #programming li, #math li, #art li {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 900px)
+{
+    #coursework{
+        margin-right: -0%;
+    }
+}
+
+h1 a {
+    font-family: 'Rowdies', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    text-decoration: none;
 }

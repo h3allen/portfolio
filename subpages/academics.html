@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css/aStyles.css">
+        <link rel="stylesheet" href="../css/styles.css">
         <script src="../js/functionality.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,59 +14,86 @@
 
         <link rel="icon" type="image/png" href="../media/favicon.png" sizes="32x32" />
 
+        <title>Portfolio - Holly Allen</title>
+
         <title>Academics</title>
     </head>
-    <body>
+    <body style="background-image: url('../media/star_map.png');background-size: 150%;background-position: center;">
         <header>
             <div id="title">
-                <h1>Holly Allen</h1>
+                <h1><a href="../index.html">Holly Allen</a></h1>
             </div>
-            <div class="dropdown">
-                <button onclick="dropDown()" class="dropbtn">Projects</button>
+            <div id="navigation">
+                <div class="dropdown">
+                    <button onclick="dropDown()" class="dropbtn">Projects</button>
 
-                <div id="dropdownMenu" class="dropdown-content">
-                  <a href="../index.html">Unity Engine</a>
-                  <a href="#maya">Autodesk Maya</a>
-                  <a href="#javascript">JavaScript</a>
-                  <!-- <a href="#">Physical Media</a> -->
-                  <!-- <a href="#">2D Art</a> -->
-                  <a href="#misc">Miscellaneous</a>
+                    <div id="dropdownMenu" class="dropdown-content">
+                    <a href="../index.html#unity">Unity Engine</a>
+                    <a href="../index.html#maya">Autodesk Maya</a>
+                    <a href="../index.html#javascript">JavaScript</a>
+                    <!-- <a href="#">Physical Media</a> -->
+                    <!-- <a href="#">2D Art</a> -->
+                    <a href="../index.html#misc">Miscellaneous</a>
+                    </div>
                 </div>
-            </div>
-            <div class="subpageLink">
-                <a href="../subpages/academics.html">Academics</a>
-            </div>
-            <div class="subpageLink">
-                <a href="../subpages/about.html">About</a>
-            </div>
+                <div class="subpageLink">
+                    <div id="academics"><a href="../subpages/academics.html">Academics</a></div>
+                </div>
+                <div class="subpageLink">
+                    <div id="about"><a href="../subpages/about.html">About</a></div>
+                </div>
 
-            <img src="../media/crow.png" alt="Crow digital painting">
+                <img src="../media/crow.png" alt="Crow digital painting">
+            </div>
         </header>
 
-        <h3>Current Coursework</h3>
-        <ul>
-            <li>IGME 320 - Game Design and Developemnt II</li>
-            <li>IGME 309 - Data Structures and Algorithms II</li>
-            <li>IGME 470 - Physical Computing and Alternative Interfaces</li>
-            <li>MATH 241 - Linear Algebra</li>
-        </ul>
+        <div id="coursework">
+            <h3>Current Coursework</h3>
+            <div id="current">
+                <h4>Fall 2022</h4>
+                <ul>
+                    <li>IGME 320 - Game Design and Developnt II</li>
+                    <li>IGME 309 - Data Structures and Algorithms II</li>
+                    <li>IGME 470 - Physical Computing and Alternative Interfaces</li>
+                    <li>MATH 241 - Linear Algebra</li>
+                </ul>
+            </div>
 
-        <h3>Relevant Courses</h3>
-        <h4>Programming</h4>
-        <ul>
-            <li>IGME 105</li>
-            <li>IGME 106</li>
-            <li>IGME 209</li>
-        </ul>
+            <div id="relevant">
+                <h3>Relevant Courses</h3>
+                <div id="programming">
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>IGME 105 - Game Development & Algorithm Problem Solving I</li>
+                        <li>IGME 106 - Game Development & Algorithm Problem Solving II</li>
+                        <li>IGME 209 - Data Structures and Algorithms I</li>
+                        <li>IGME 309 - Data Structures and Algorithms II</li>
+                        <li>IGME 235 - Introduction to Game Web Tech</li>
+                    </ul>
+                </div>
 
-        <h4>Mathematics</h4>
-        <ul>
-            <li>MATH 131 - Discrete Mathematics</li>
-            <li>MATH 185 - Math Graphical Simulation I</li>
-            <li>MATH 200 - Discrete Math & Introduction to Proofs</li>
-            <li>Calculus 1 & 2</li>
-        </ul>
+                <div id="math">
+                    <h4>Mathematics</h4>
+                    <ul>
+                        <li>MATH 241 - Linear Algebra</li>
+                        <li>MATH 131 - Discrete Mathematics</li>
+                        <li>MATH 185 - Math Graphical Simulation I</li>
+                        <li>MATH 200 - Discrete Math & Introduction to Proofs</li>
+                        <li>Calculus 1 & 2</li>
+                    </ul>
+                </div>
 
-        <h4>Art & Design</h4>
+                <div id="art">
+                    <h4>Art & Design</h4>
+                    <ul>
+                        <li>IGME 220 - Game Design I</li>
+                        <li>IGME 320 - Game Design II</li>
+                        <li>IGME 236 - Experience Design for Games & Media</li>
+                        <li>IGME 219 - 3D Animation & Asset Production</li>
+                        <li>IMGE 119 - 2D Animation & Asset Production</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
