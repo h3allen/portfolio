@@ -182,7 +182,7 @@ header{
         height: 6rem;
     
         padding: 0.5rem;
-        padding-bottom: 1rem;
+        padding-bottom: 2.25rem;
     }
 }
 #contact p{
@@ -229,10 +229,16 @@ header{
     flex-direction: column;
 }
 
-#fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom{margin-left: -1rem; margin-right: -1rem;} 
+#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom{margin-left: -1rem; margin-right: -1rem;} 
 @media screen and (min-width: 758px)
 {#fish, #hvz, #treasure, #apocalypta{margin-right: 30%;}
-#hatbird, #teaset, #trivia, #phantom{margin-left: 30%;}}
+#neo-versailles, #hatbird, #teaset, #trivia, #phantom{margin-left: 30%;}}
+
+iframe {
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
 
 footer{
     background-color: #0d1736;
@@ -381,3 +387,5 @@ h1 a {
     font-size: 30px;
     text-decoration: none;
 }
+
+/* ABOUT PAGE */
