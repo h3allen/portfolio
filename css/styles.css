@@ -229,16 +229,27 @@ header{
     flex-direction: column;
 }
 
-#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom{margin-left: -1rem; margin-right: -1rem;} 
-@media screen and (min-width: 758px)
-{#fish, #hvz, #treasure, #apocalypta{margin-right: 30%;}
-#neo-versailles, #hatbird, #teaset, #trivia, #phantom{margin-left: 30%;}}
-
 iframe {
     margin-bottom: 0.5rem;
     border: none;
     border-radius: 5px;
+    width: 80%;
 }
+
+#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom{margin-left: -1rem; margin-right: -1rem;} 
+@media screen and (min-width: 758px)
+{
+    #fish, #hvz, #teaset, #treasure, #apocalypta{margin-right: 30%;}
+    #neo-versailles, #hatbird, #scorpion, #a-star, #trivia, #phantom{margin-left: 30%;}
+    iframe {
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    }   
+}
+
+
 
 footer{
     background-color: #0d1736;
