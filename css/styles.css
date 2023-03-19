@@ -32,6 +32,13 @@ body{
     }
 }
 
+@media screen and (max-width: 470px)
+{
+    .subpageLink {
+        padding-left: 20%;
+    }
+}
+
 header{
     background-color: #243062;
 
@@ -182,7 +189,7 @@ header{
         height: 6rem;
     
         padding: 0.5rem;
-        padding-bottom: 2.25rem;
+        padding-bottom: 2.75rem;
     }
 }
 #contact p{
@@ -236,7 +243,7 @@ iframe {
     width: 80%;
 }
 
-#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom{margin-left: -1rem; margin-right: -1rem;} 
+#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom, #scorpion, #a-star{margin-left: -1rem; margin-right: -1rem;} 
 @media screen and (min-width: 758px)
 {
     #fish, #hvz, #teaset, #treasure, #apocalypta{margin-right: 30%;}
@@ -248,8 +255,6 @@ iframe {
     width: 100%;
     }   
 }
-
-
 
 footer{
     background-color: #0d1736;
