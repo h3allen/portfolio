@@ -243,16 +243,19 @@ iframe {
     width: 80%;
 }
 
-#neo-versailles, #fish, #hvz, #treasure, #apocalypta, #hatbird, #teaset, #trivia, #phantom, #scorpion, #a-star{margin-left: -1rem; margin-right: -1rem;} 
+.project p {
+    height: 100%;
+}
+
+#neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
 @media screen and (min-width: 758px)
 {
-    #fish, #hvz, #teaset, #treasure, #apocalypta{margin-right: 30%;}
-    #neo-versailles, #hatbird, #scorpion, #a-star, #trivia, #phantom{margin-left: 30%;}
+    #fish {margin-right: 30%;}
+    #neo-versailles {margin-left: 30%;}
     iframe {
     margin-bottom: 0.5rem;
     border: none;
     border-radius: 5px;
-    width: 100%;
     }   
 }
 
@@ -293,9 +296,6 @@ h1, h2, h3{
 
 h2{
     margin-top: 4rem;
-/*     background-color: rgb(5,8,31);
-    border-radius: 5px;
-    width: 10%; */
 }
 
 h4{
