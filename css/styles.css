@@ -3,8 +3,6 @@
     font-size: 18px;
 }
 body{
-    /* background-color: #0b0c2b; */
-
     color: rgb(235, 232, 240);    
     margin: 3rem;
 
@@ -78,7 +76,7 @@ header{
 
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
 
     width: 6rem;
     height: 2rem;
@@ -106,7 +104,7 @@ header{
     background-color: #28366a;
     border: #6358a1;
 
-    border-radius: 5px;
+    border-radius: 3px;
     min-width: 160px;
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -126,7 +124,7 @@ header{
   
   .dropdown-content a:hover {
       background-color: #1e2c5c;
-      border-radius: 5px;
+      border-radius: 3px;
     }
   .show {display:block;}
 
@@ -144,23 +142,14 @@ header{
 
   }
 
-  #about {
-    grid-area: about;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    margin-top: -25px;
-    margin-left: 54%;
-    margin-bottom: -30px;
-  }
-
 #bio{
-    background-color: #1c2851;
+    background-color: #1c2051e0;
 
     grid-area: bio;
 
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-    border-radius: 5px;
+    border-radius: 3px;
 
     padding: 0.5rem;
 
@@ -169,12 +158,12 @@ header{
 }
 
 #contact{
-    background-color: #1c2851;
+    background-color: #1c2051e0;
     grid-area: contact;
 
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
-    border-radius: 5px;
+    border-radius: 3px;
 
     padding: 0.5rem;
 }
@@ -184,7 +173,7 @@ header{
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
         margin-left: 20rem;
-        border-radius: 5px;
+        border-radius: 3px;
         width: 8rem;
         height: 6rem;
     
@@ -205,14 +194,14 @@ header{
 
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    border-radius: 5px;
+    border-radius: 3px;
 
     padding: 0.5rem;
 }
 
 .project {
-    background-color: #1c2851;
-    border-radius: 5px;
+    background-color: #1c2051e0;
+    border-radius: 3px;
 
     margin-left: 3rem;
     margin-right: 3rem;
@@ -221,10 +210,13 @@ header{
     padding: 1rem;
 
     text-align: center;
+    height: 500%;
 }
+
 .project p, .project h4, .project img{
     margin-top: -0.5rem;
     margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .date{
@@ -236,11 +228,14 @@ header{
     flex-direction: column;
 }
 
-iframe {
+.h_iframe {
     margin-bottom: 0.5rem;
     border: none;
-    border-radius: 5px;
-    width: 80%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
 }
 
 .project p {
@@ -250,12 +245,13 @@ iframe {
 #neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
 @media screen and (min-width: 758px)
 {
-    #fish {margin-right: 30%;}
     #neo-versailles {margin-left: 30%;}
     iframe {
-    margin-bottom: 0.5rem;
-    border: none;
-    border-radius: 5px;
+        margin-bottom: 0.5rem;
+        border: none;
+        border-radius: 3px;
+        width: calc(100vw / 1120px * 100);
+        height: calc(100vh / 600px * 100);
     }   
 }
 
@@ -318,7 +314,7 @@ h4{
 }
 
 img{
-    border-radius: 5px;
+    border-radius: 3px;
     border: #22305c;
     border-style: solid;
     border-width: 3px;
@@ -374,7 +370,7 @@ footer i{
 /* ACADEMICS */
 #current, #programming, #math, #art {
     background-color: #1c2851;
-    border-radius: 5px;
+    border-radius: 3px;
 
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -403,5 +399,3 @@ h1 a {
     font-size: 30px;
     text-decoration: none;
 }
-
-/* ABOUT PAGE */
