@@ -136,7 +136,6 @@ header{
     grid-column-end: 2;
     margin-top: -30px;
     margin-left: 27%;
-
   }
 
 #bio{
@@ -207,7 +206,7 @@ header{
     padding: 1rem;
 
     text-align: center;
-    height: 90%;
+    height: 77%;
 }
 
 .project p, .project h4, .project img{
@@ -218,17 +217,6 @@ header{
 
 .date{
     margin-top: 0.5rem;
-}
-
-#unity, #maya, #javascript, #misc{
-    display: flex;
-    flex-direction: column;
-}
-
-#neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
-@media screen and (min-width: 758px)
-{
-    #neo-versailles {margin-left: 30%;}
 }
 
 /* Standard Links */
@@ -291,9 +279,22 @@ header img{
 }
 
 /* PROJECTS */
+#neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
+@media screen and (min-width: 758px)
+{
+    #neo-versailles {margin-left: 30%;}
+}
+
+#changeling {margin-left: -1rem; margin-right: -1rem;} 
+@media screen and (min-width: 758px)
+{
+    #changeling {margin-right: 30%;}
+}
+
 #projects h1{
     margin-top: -0.25rem;
 }
+
 #projects img{
     width: 100%;
 }
