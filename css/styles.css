@@ -38,7 +38,7 @@ body{
 }
 
 header{
-    background-color: #243062;
+    background-color: #19234c;
 
     grid-area: header;
 
@@ -65,7 +65,7 @@ header{
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #243062;
+    background-color: #19234c;
     color: rgb(232, 229, 236);
 
     margin-left: 0.5rem;
@@ -87,7 +87,7 @@ header{
   }
   
   .dropbtn:hover, .dropbtn:focus {
-    background-color: #283666;
+    background-color: #19234c;
     color: rgb(232, 229, 236);
   }
   
@@ -101,14 +101,11 @@ header{
     display: none;
     position: absolute;
 
-    background-color: #28366a;
+    background-color: #1f2b5a;
     border: #6358a1;
 
-    border-radius: 3px;
+    border-radius: 5px;
     min-width: 160px;
-
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
 
     margin-left: 0.5rem;
     width: 10rem;
@@ -210,7 +207,7 @@ header{
     padding: 1rem;
 
     text-align: center;
-    height: 500%;
+    height: 90%;
 }
 
 .project p, .project h4, .project img{
@@ -228,43 +225,10 @@ header{
     flex-direction: column;
 }
 
-.h_iframe {
-    margin-bottom: 0.5rem;
-    border: none;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: auto;
-}
-
-.project p {
-    height: 100%;
-}
-
 #neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
 @media screen and (min-width: 758px)
 {
     #neo-versailles {margin-left: 30%;}
-    iframe {
-        margin-bottom: 0.5rem;
-        border: none;
-        border-radius: 3px;
-        width: calc(100vw / 1120px * 100);
-        height: calc(100vh / 600px * 100);
-    }   
-}
-
-footer{
-    background-color: #0d1736;
-    color: rgb(199, 209, 221);
-
-    grid-area: footer;
-
-    margin: -3rem;
-    margin-top: 0.5rem;
-
-    padding: 0.5rem;
 }
 
 /* Standard Links */
@@ -309,10 +273,6 @@ h4{
     color: rgb(189, 229, 253);
 }
 
-#projects h1{
-    margin-top: -0.25rem;
-}
-
 img{
     border-radius: 3px;
     border: #22305c;
@@ -330,6 +290,10 @@ header img{
     border: none;
 }
 
+/* PROJECTS */
+#projects h1{
+    margin-top: -0.25rem;
+}
 #projects img{
     width: 100%;
 }
@@ -339,11 +303,15 @@ header img{
         width: 160%;
     }
 }
-
 @media screen and (min-width: 758px){
     #projects img{
         width: 60%;
     }
+}
+
+#projects video {
+    width: 100%;
+    height: 100%;
 }
 
 .project a:link{
@@ -360,11 +328,6 @@ header img{
 }
 .project a:active{
     color: rgb(176, 237, 255);
-}
-
-footer i{
-    font-size: 15px;
-    margin-top: -1rem;
 }
 
 /* ACADEMICS */
