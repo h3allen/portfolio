@@ -4,12 +4,12 @@ https://people.rit.edu/hea4002/
 
  ## Updates Needed
 - Update blurb (make it better, boring right now)
-- Update contacts to be icons instead of text
-
- ### Projects
-
+- New video for Neo-Versailles
+- Image/website for Changeling
 
  ### Website Architecture
- - Image carosels or Flip cards
- - Subpages for WebGL builds
- - Subpages for longer projects? Include documentation for games that have it?
+ - Image carosels
+ - Subpages for each project
+
+ ## Images Used
+ - GitHub, File, LinkedIn: FontAwesome

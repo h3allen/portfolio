@@ -146,6 +146,7 @@ header{
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border-radius: 3px;
+    margin-right: -2rem;
 
     padding: 0.5rem;
 
@@ -160,6 +161,7 @@ header{
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border-radius: 3px;
+    margin-right: -2rem;
 
     padding: 0.5rem;
 }
@@ -169,12 +171,13 @@ header{
         margin-top: 0.25rem;
         margin-bottom: 0.25rem;
         margin-left: 20rem;
+        margin-right: -0.5rem;
         border-radius: 3px;
         width: 8rem;
-        height: 6rem;
     
         padding: 0.5rem;
         padding-bottom: 2.75rem;
+        height: 3rem;
     }
 }
 #contact p{
@@ -206,7 +209,7 @@ header{
     padding: 1rem;
 
     text-align: center;
-    height: 77%;
+    height: 68.5%;
 }
 
 .project p, .project h4, .project img{
@@ -285,10 +288,16 @@ header img{
     #neo-versailles {margin-left: 30%;}
 }
 
-#changeling {margin-left: -1rem; margin-right: -1rem;} 
+#changeling {margin-left: -1rem; margin-right: -1rem; height: 50%;} 
 @media screen and (min-width: 758px)
 {
     #changeling {margin-right: 30%;}
+}
+
+#game-jam {margin-left: -1rem; margin-right: -1rem;} 
+@media screen and (min-width: 758px)
+{
+    #game-jam {margin-left: 30%;}
 }
 
 #projects h1{
