@@ -48,7 +48,7 @@ header{
     margin-bottom: 0.5rem;
 
     padding: 0.5rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.4rem;
 }
 
 .navigation {
@@ -209,7 +209,7 @@ header{
     padding: 1rem;
 
     text-align: center;
-    height: 68.5%;
+
 }
 
 .project p, .project h4, .project img{
@@ -282,19 +282,29 @@ header img{
 }
 
 /* PROJECTS */
-#neo-versailles {margin-left: -1rem; margin-right: -1rem;} 
+#neo-versailles {
+    margin-left: -1rem; 
+    margin-right: -1rem;
+    height: 68.5%;
+} 
 @media screen and (min-width: 758px)
 {
     #neo-versailles {margin-left: 30%;}
 }
 
-#changeling {margin-left: -1rem; margin-right: -1rem; height: 50%;} 
+#changeling {
+    margin-left: -1rem; 
+    margin-right: -1rem;
+} 
 @media screen and (min-width: 758px)
 {
     #changeling {margin-right: 30%;}
 }
 
-#game-jam {margin-left: -1rem; margin-right: -1rem;} 
+#game-jam {
+    margin-left: -1rem; 
+    margin-right: -1rem;
+} 
 @media screen and (min-width: 758px)
 {
     #game-jam {margin-left: 30%;}
@@ -342,7 +352,7 @@ header img{
 
 /* ACADEMICS */
 #current, #programming, #math, #art {
-    background-color: #1c2851;
+    background-color: #1c2051e0;
     border-radius: 3px;
 
     margin-left: 0.5rem;
@@ -353,6 +363,17 @@ header img{
     padding-right: -0.5rem;
     padding-top: 0.001rem;
     padding-bottom: 0.001rem;
+}
+#info {
+    background-color: #1c2051e0;
+    border-radius: 3px;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+
+    padding: 1rem;
+    padding-bottom: 1rem;
 }
 
 #current li, #programming li, #math li, #art li {
