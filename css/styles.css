@@ -239,7 +239,7 @@ a:active{
     color: #e8acf0;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     font-family: 'Rowdies', cursive;
     font-weight: normal;
     font-size: 30px;
@@ -370,10 +370,15 @@ header img{
 
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     padding: 1rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
+}
+
+#info h3 {
+    padding-top: 0rem;
 }
 
 #current li, #programming li, #math li, #art li {
@@ -382,6 +387,16 @@ header img{
 
 @media screen and (min-width: 900px)
 {
+    #info {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    
+        padding: 1rem;
+        padding-right: 4.5rem;
+        padding-bottom: 1rem;
+    }
+
     #coursework{
         margin-right: -0%;
     }
