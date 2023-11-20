@@ -39,7 +39,7 @@
             </div>
         </header>
 
-        <div id="info">
+        <div id="info"><p>
             <h3>Painted World: Neo-Versailles</h3>
             <i>Painted World: Neo-Versailles</i> was a collaboration between the ArtCenter College of Art and Design in 
             California and Rochester Institute of Technology. As an RIT student on the project, my main focus
@@ -49,6 +49,20 @@
             <i>Neo-Versailles</i> was on display at two different RIT events: the Student Games Showcase and Imagine RIT.
 
             <h4>Inventory</h4>
+            The key part of the project I worked on for the Fall semester was the inventory. It needed to be easily modifiable by
+            the designers, since the size and objects could change at any time during the development of the game. It also needed
+            to be effecient enough that it didn't contribute to signficant lag when accessed and the items within needed to be
+            identifiable. 
+            <br><br>
+            The basics of the inventory works as follows:
+            <br><br><b>Inventory.cs</b><br>
+            Handles the actual inventory array, as well as any methods to add objects to it. The inventory array is 
+            modifiable before the game starts up, but from that point on, the size couldn't be changed. If an item is used or removed,
+            the inventory shifts the index of each item past that point down by one. When adding, the inventory has different logic 
+            depending upon the item type, meaning it can handle both stackable and non-stackable items.
+            
+            <br><br><b>InventoryItem.cs</b><br>
+            
             <br><br>
             An updated version of the inventory scripts for this project is being used by the two 2023-2024 ArtCenter collaborations.
             
@@ -91,10 +105,11 @@
             <img src="../media/jesus_hallway.jpg" alt="External view of game scene with overly bright lighting affecting some elements" width="75%">
             <br><br>
             Another lighting issue we ran into was overlapping UVs. These overlaps causes parts of the map to be lit incorrectly, often to an
-            eye-watering degree as seen above. 
+            eye-watering degree as seen above. Some of these could be solved by recreating their lightmap UVs, removing the overlap. For others,
+            this option didn't work, leading to some of the truly strange lighting seen in later levels.
 
             <br><br>
-            Please reach out via email if you would like to play through the final version of the game!
-        </div>
+            Feel free to reach out via email if you would like to play the final version of the game!
+        </p></div>
     </body>
 </html>

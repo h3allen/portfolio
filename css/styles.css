@@ -285,11 +285,20 @@ header img{
 #neo-versailles {
     margin-left: -1rem; 
     margin-right: -1rem;
-    height: 68.5%;
+    height: 59.5%;
 } 
 @media screen and (min-width: 758px)
 {
     #neo-versailles {margin-left: 30%;}
+}
+
+#directX-11 {
+    margin-left: -1rem; 
+    margin-right: -1rem;
+} 
+@media screen and (min-width: 758px)
+{
+    #directX-11 {margin-right: 30%;}
 }
 
 #changeling {
@@ -298,7 +307,7 @@ header img{
 } 
 @media screen and (min-width: 758px)
 {
-    #changeling {margin-right: 30%;}
+    #changeling {margin-left: 30%;}
 }
 
 #game-jam {
@@ -307,7 +316,7 @@ header img{
 } 
 @media screen and (min-width: 758px)
 {
-    #game-jam {margin-left: 30%;}
+    #game-jam {margin-right: 30%;}
 }
 
 #projects h1{
