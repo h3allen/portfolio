@@ -34,7 +34,6 @@
                 <div class="subpageLink">
                     <div id="academics"><a href="academics.html">Academics</a></div>
                 </div>
-
                 <!-- <img src="../media/crow.png" alt="Crow digital painting"> -->
             </div>
         </header>
@@ -49,7 +48,7 @@
             <i>Neo-Versailles</i> was on display at two different RIT events: the Student Games Showcase and Imagine RIT.
 
             <h4>Inventory</h4>
-            The key part of the project I worked on for the Fall semester was the inventory. It needed to be easily modifiable by
+            The key part I worked on for the Fall semester was the inventory. It needed to be easily modifiable by
             the designers, since the size and objects could change at any time during the development of the game. It also needed
             to be effecient enough that it didn't contribute to signficant lag when accessed and the items within needed to be
             identifiable. 
@@ -62,7 +61,16 @@
             depending upon the item type, meaning it can handle both stackable and non-stackable items.
             
             <br><br><b>InventoryItem.cs</b><br>
-            
+            Parent class and default for every inventory item. Any other specialty item types are based upon this class. The key parts
+            of the functionality on the backend are the item type and the ID. The type is just a simple way of knowing what item we're 
+            looking it, like ammo or a potion, especially when that item needs to stack. The ID number was essential for both storing 
+            the items, debugging, and saving/loading the inventory. Other than these two key pieces, the item handles removing itself 
+            from the world and adding itself back into the world (although this was never finalized as the game never used it).
+
+            <br><br><b>StackableItem.cs</b><br>
+            This was the most essential type of item for the game. From the beginning essentially every planned item needed to be
+            stackable. 
+
             <br><br>
             An updated version of the inventory scripts for this project is being used by the two 2023-2024 ArtCenter collaborations.
             
@@ -110,6 +118,7 @@
 
             <br><br>
             Feel free to reach out via email if you would like to play the final version of the game!
+            <!-- GIF OF CREDITS -->
         </p></div>
     </body>
 </html>
