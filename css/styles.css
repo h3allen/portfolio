@@ -110,7 +110,7 @@ header{
     margin-left: 0.5rem;
     width: 10rem;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -285,16 +285,20 @@ header img{
 #neo-versailles {
     margin-left: -1rem; 
     margin-right: -1rem;
-    height: 59.5%;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
-    #neo-versailles {margin-left: 30%;}
+    #neo-versailles {
+        margin-left: 30%;
+        height: auto;
+    }
 }
 
 #directX-11 {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -304,6 +308,7 @@ header img{
 #changeling {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -313,6 +318,7 @@ header img{
 #game-jam {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -344,19 +350,24 @@ header img{
 }
 
 .project a:link{
-    color: rgb(229, 228, 236);
+    color: rgb(235, 232, 240);
+    text-decoration: none;
 } 
 .project a:visited{
-    color: rgb(199, 202, 206);
+    color: rgb(235, 232, 240);
+    text-decoration: none;
 } 
 .project a:focus{
     color: rgb(235, 231, 241);
+    text-decoration: none;
 } 
 .project a:hover{
     color: rgb(189, 229, 253);
+    text-decoration: none;
 }
 .project a:active{
     color: rgb(176, 237, 255);
+    text-decoration: none;
 }
 
 /* ACADEMICS */
