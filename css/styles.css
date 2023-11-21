@@ -213,9 +213,13 @@ header{
 }
 
 .project p, .project h4, .project img{
-    margin-top: -0.5rem;
+    margin-top: -0.25rem;
     margin-bottom: 0.5rem;
     text-align: left;
+}
+
+#current h4, #programming h4, #math h4, #art h4{
+    margin-top: 0.5rem;
 }
 
 .date{
@@ -414,7 +418,7 @@ header img{
 }
 
 #current li, #programming li, #math li, #art li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 900px)
@@ -437,6 +441,6 @@ header img{
 h1 a {
     font-family: 'Rowdies', cursive;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 27px;
     text-decoration: none;
 }
