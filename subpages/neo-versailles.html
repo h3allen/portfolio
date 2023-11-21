@@ -24,11 +24,11 @@
             <div id="navigation">
                 <div class="dropdown">
                     <button onclick="dropDown()" class="dropbtn">Projects</button>
-
                     <div id="dropdownMenu" class="dropdown-content">
-                    <a href="neo-versailles.html">Neo-Versailles</a>
-                    <a href="changeling.html">Changeling</a>
-                    <a href="game-jams.html">Game Jams</a>
+                        <a href="../index.html#changeling">Changeling</a>
+                        <a href="../index.html#directX-11">DirectX 11</a>
+                        <a href="../index.html#game-jam">Game Jams</a>
+                        <a href="../index.html#neo-versailles">Neo-Versailles</a>
                     </div>
                 </div>
                 <div class="subpageLink">
@@ -38,20 +38,24 @@
             </div>
         </header>
 
-        <div id="info"><p>
+        <div id="info" margin-top="">
             <h3>Painted World: Neo-Versailles</h3>
             <i>Painted World: Neo-Versailles</i> was a collaboration between the ArtCenter College of Art and Design in 
-            California and Rochester Institute of Technology. As an RIT student on the project, my main focus
+            California and Rochester Institute of Technology. The project was written in Unity, and used Perforce, Confluence,
+            and Jira for version control and project management. As an RIT student on the project, my main focus
             was the technical needs of the project as a programmer. The project spanned the entire academic 2022 - 2023
             year, starting for RIT in August and ending in May.
             <br><br>
-            <i>Neo-Versailles</i> was on display at two different RIT events: the Student Games Showcase and Imagine RIT.
+            The project was on display at two different RIT events: the Student Games Showcase and Imagine RIT.
+
+            <!--HEY PUT A VIDEO OF THE ACTUAL FINAL PRODUCT HERE LMAO-->
 
             <h4>Inventory</h4>
             The key part I worked on for the Fall semester was the inventory. It needed to be easily modifiable by
             the designers, since the size and objects could change at any time during the development of the game. It also needed
             to be effecient enough that it didn't contribute to signficant lag when accessed and the items within needed to be
             identifiable. 
+            <!--INVENTORY CLASS DIAGRAM-->
             <br><br>
             The basics of the inventory works as follows:
             <br><br><b>Inventory.cs</b><br>
@@ -69,15 +73,27 @@
 
             <br><br><b>StackableItem.cs</b><br>
             This was the most essential type of item for the game. From the beginning essentially every planned item needed to be
-            stackable. 
+            stackable. Currently, it uses a list and a maximum stack value to hold the stacked items. This functions and is easy to use
+            but it would be better if it were an array, similar to how to actual inventory functions.
+
+            <br><br><b>KeyItem.cs</b>
+            This script was intended to contain any special functionality of key items, but the game never needed any unqiue functionality
+            in the final version, so it just sits as an empty dummy class.
 
             <br><br>
-            An updated version of the inventory scripts for this project is being used by the two 2023-2024 ArtCenter collaborations.
+            An updated version of the inventory scripts for this project is being used by the two 2023-2024 RIT ArtCenter collaborations.
             
             <h4>Player Variables</h4>
+            I worked on our central script for player variables. This exists to prevent these from being changed or duplicated elsewhere in the
+            code. Anything essential to the player that needed to be accessed by different scripts was housed here, meaning everything was just
+            a reference back to this key file.
 
             <h4>Environmental Scripts</h4>
-
+            <i>Neo-Versailles</i> has a number of scripts affecting environmental assets in order for the game to have its look and feel.
+            Most of what I did here was create scripts allowing the designers to move and rotate objects while the scenes played as well 
+            as create objects that the player could affect with their abilities. This also included anything that reset the player to their
+            last saved position, preventing them from getting out of bounds, which tended to happen during testing. 
+            <!--FUNNY LITTE GIF OF THE GEARS TURNING :D-->
 
             <h4>Lighting</h4>
             During the second semester of the development of <i>Painted World: Neo-Versailles</i>,
@@ -117,8 +133,8 @@
             this option didn't work, leading to some of the truly strange lighting seen in later levels.
 
             <br><br>
-            Feel free to reach out via email if you would like to play the final version of the game!
+            Feel free to reach out via email if you would like to play the final version of the game or look at the code!
             <!-- GIF OF CREDITS -->
-        </p></div>
+        </div>
     </body>
 </html>

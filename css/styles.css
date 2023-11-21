@@ -151,7 +151,7 @@ header{
     padding: 0.5rem;
 
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #contact{
@@ -223,6 +223,9 @@ header{
 }
 
 /* Standard Links */
+a{
+    text-decoration: none;
+}
 a:link{
     color: #ca92ff;
 } 
@@ -242,7 +245,7 @@ a:active{
 h1, h2, h3, h4{
     font-family: 'Rowdies', cursive;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 h2{
@@ -251,6 +254,19 @@ h2{
 
 h4{
     font-size: 20px;
+}
+
+#bio h4{
+    margin-bottom: 0.25rem;
+}
+
+#bio a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#info h3{
+    margin-top: -0.5rem;
 }
 
 #contact h3{
@@ -390,15 +406,11 @@ header img{
 
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    margin-top: 1.5rem;
 
     padding: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
-}
-
-#info h3 {
-    padding-top: 0rem;
+    padding-bottom: 0rem;
+    height: auto;
 }
 
 #current li, #programming li, #math li, #art li {
