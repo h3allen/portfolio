@@ -369,7 +369,7 @@ header img{
 }
 
 #projects img{
-    width: 100%;
+    width: 200%;
 }
 @media screen and (min-width: 800px)
 {
@@ -379,7 +379,7 @@ header img{
 }
 @media screen and (min-width: 758px){
     #projects img{
-        width: 60%;
+        width: 100%;
     }
 }
 
