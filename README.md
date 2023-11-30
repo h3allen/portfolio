@@ -6,12 +6,16 @@ NOW ON GITHUB PAGES!
  ## Updates Needed
 - Update blurb (make it better, boring right now)
 - New video for Neo-Versailles
+- Images for Neo-Versailles (gears, class diagram)
 - Image/website for Changeling
 - Update navigation to make more sense & be more clear
+- DirectX gif of final product
+- Changeling Image
+- Changeling sub-page
+- DirectX sub-page
+- Game Jam sub-page
 
  ### Website Architecture
- - Image carosels
- - Subpages for each project
 
  ## Images Used
  - GitHub, File, LinkedIn: FontAwesome
