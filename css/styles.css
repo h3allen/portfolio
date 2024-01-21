@@ -257,9 +257,11 @@ a:visited{
 } 
 a:focus{
     color: #b893fc;
+    text-decoration-line: underline;
 } 
 a:hover{
     color: rgb(208, 140, 240);
+    text-decoration-line: underline;
 }
 a:active{
     color: #e8acf0;
@@ -398,11 +400,11 @@ header img{
 } 
 .project a:focus{
     color: rgb(235, 231, 241);
-    text-decoration: none;
+    text-decoration-line: underline;
 } 
 .project a:hover{
     color: rgb(189, 229, 253);
-    text-decoration: none;
+    text-decoration-line: underline;
 }
 .project a:active{
     color: rgb(176, 237, 255);
