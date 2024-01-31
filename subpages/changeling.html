@@ -33,15 +33,197 @@
                     </div>
                 </div>
                 <div class="subpageLink">
-                    <div id="academics"><a href=".academics.html">Academics</a></div>
+                    <div id="academics"><a href="academics.html">Academics</a></div>
                 </div>
 
                  <!-- <img src="../media/crow.png" alt="Crow digital painting"> -->
             </div>
         </header>
 
-        <div id="coursework">
+        <div id="info" margin-top="">
             <h3>Changeling</h3>
-        </div>
+            The <i>Changeling</i> VR Project started in 2020 and every semester has rotated to a different cohort of developers as an entrepreneurial co-op 
+            at RIT. I joined the project for Summer 2023, about three years after development on the project. I was brought on as the lead of the new Technical 
+            Art team, as there hadn't been enough technical artists prior to the group to warrant a separate group. The task we were told was our top priority on 
+            the project was to go through and polish the visuals for an approaching Early Access release, which has since been delayed.
+            <br><br>
+            That polishing didn't really happen. Instead, the team noticed that while there were levels, VFX, animations, and post-processes present in the project, 
+            the game ran so slow that it was impossible to actually enjoy the experience at all. The game sideloads into a number of VR headsets, so the technical specs 
+            for each needed to be checked, although we only had a few available to us for testing. The initial fps values we found are in the table below:
+            <br><br>
+            <table>
+                <tr>
+                  <th>Level</th>
+                  <th>Average</th>
+                  <th>Quest 2<br>i7-11700k</th>
+                  <th>Rift S<br>Ryzen 2700x</th>
+                </tr>
+                <tr>
+                  <td>Onboarding</td>
+                  <td>35 fps</td>
+                  <td>36 fps</td>
+                  <td>30-40 fps</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir</td>
+                    <td>38 fps</td>
+                    <td>36 fps</td>
+                    <td>40 fps</td>
+                </tr>
+                <tr>
+                    <td>Mind Palace</td>
+                    <td>76 fps</td>
+                    <td>72 fps</td>
+                    <td>80 fps</td>
+                </tr>
+                <tr>
+                    <td>Mother's Level</td>
+                    <td>14 fps</td>
+                    <td>20 fps (lowest 9)</td>
+                    <td>10-20 fps</td>
+                </tr>
+                <tr>
+                    <td>Father's Level</td>
+                    <td>9 fps</td>
+                    <td>15 fps (lowest 6.8)</td>
+                    <td>2.5-10 fps</td>
+                </tr>
+              </table> 
+              <br>
+              Seeing these issues, the team agreed we had one major goal for our time on the project: get each level to run at about 72-80 frames per second 
+              consistently. The lowest frame rate we were comfortable allowing to pass was a consistent 60 fps, but our stretch goal was to run the game at 
+              the maximum fps most VR headsets can handle at 120.
+              <br><br>
+              The first tasks divided amongst the team were to check for common pain points in student-made projects that could be affecting the frame rate - 
+              real-time lighting, high poly models, and expensive materials and post-processes. The team found all of these.
+              <br><br>
+              A signficant amount of <i>Changeling's</i> assets are from asset stores and online packs made available by other developers. This came with the 
+              issue that many of those assets weren't optimized for VR. We'd spend most of the rest of the summer just fixing these problems.
+              <br><br>
+              By the end of our first month on the project, our frames looked more like this:
+              <br><br>
+              <table>
+                <tr>
+                  <th>Level</th>
+                  <th>Average</th>
+                  <th>Quest 2<br>i7-11700k</th>
+                  <th>Rift S<br>Ryzen 2700x</th>
+                </tr>
+                <tr>
+                  <td>Onboarding</td>
+                  <td>76 fps</td>
+                  <td>72 fps</td>
+                  <td>80 fps</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir - Street</td>
+                    <td>60 fps</td>
+                    <td>60-72 fps</td>
+                    <td>40 fps (occasionally jumps to 80)</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir - Home</td>
+                    <td>60 fps</td>
+                    <td>72 fps</td>
+                    <td>40 fps (jumps to 80)</td>
+                </tr>
+                <tr>
+                    <td>Mind Palace</td>
+                    <td>60 fps</td>
+                    <td>72 fps</td>
+                    <td>80 fps (jumps to 40)</td>
+                </tr>
+                <tr>
+                    <td>Mother's Level</td>
+                    <td>43 fps</td>
+                    <td>18-72 fps</td>
+                    <td>40 fps (jumps to 15-30)</td>
+                </tr>
+                <tr>
+                    <td>Father's Level</td>
+                    <td>52 fps</td>
+                    <td>69-72 fps</td>
+                    <td>25-40 fps (jumps to 80)</td>
+                </tr>
+              </table> 
+              <br><br>
+
+              8/11/23
+              <table>
+                <tr>
+                  <th>Level</th>
+                  <th>Average</th>
+                  <th>Quest 2<br>i7-9750H</th>
+                  <th>PC<br>Ryzen 7 3700X</th>
+                  <th>PC<br>Ryzen 7 5700x</th>
+                </tr>
+                <tr>
+                  <td>Onboarding</td>
+                  <td> fps</td>
+                  <td>112-120 fps</td>
+                  <td>120 fps</td>
+                  <td>120 fps</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir - Apartment</td>
+                    <td>120 fps</td>
+                    <td>120 fps</td>
+                    <td>120 fps</td>
+                    <td>120 fps</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir - Street</td>
+                    <td> fps</td>
+                    <td>60 fps</td>
+                    <td>120 fps</td>
+                    <td>120 fps</td>
+                </tr>
+                <tr>
+                    <td>Intro Noir - Home</td>
+                    <td> fps</td>
+                    <td>60 fps</td>
+                    <td>115-120 fps</td>
+                    <td>120 fps</td>
+                </tr>
+                <tr>
+                    <td>Mind Palace</td>
+                    <td> fps</td>
+                    <td>60-120 fps</td>
+                    <td>70-120 fps</td>
+                    <td>112-120 fps</td>
+                </tr>
+                <tr>
+                    <td>Mother's Level</td>
+                    <td> fps</td>
+                    <td>30 fps</td>
+                    <td>80-100 fps</td>
+                    <td>100-120 fps</td>
+                </tr>
+                <tr>
+                    <td>Father's Level</td>
+                    <td> fps</td>
+                    <td>60-120 fps</td>
+                    <td>120 fps</td>
+                    <td>105-120 fps</td>
+                </tr>
+                <tr>
+                    <td>Douglas's Level</td>
+                    <td> fps</td>
+                    <td>80-120 fps</td>
+                    <td>120 fps</td>
+                    <td>116-120 fps</td>
+                </tr>
+                <tr>
+                    <td>Kirsten's Level</td>
+                    <td> fps</td>
+                    <td>120 fps</td>
+                    <td>117-120 fps</td>
+                    <td>   </td>
+                </tr>
+              </table> 
+              <br><br>
+              <i>Want to see how the fps values changed over the whole project? More data is <a href="changeling-data.html">here</a>!</i>
+              <br>
+         </div>
     </body>
 </html>

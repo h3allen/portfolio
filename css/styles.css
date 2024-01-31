@@ -125,10 +125,16 @@ header{
     }
   .show {display:block;}
 
-  .subpageLink a{
-    text-decoration: none;
-    font-size: 20px;
-  }
+    .subpageLink a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .subpageLink a:focus{
+        text-decoration-line: underline;
+    } 
+    .subpageLink a:hover{
+        text-decoration-line: underline;
+    }
 
   #academics {
     grid-area: academics;
@@ -429,13 +435,21 @@ header img{
     background-color: #1c2051e0;
     border-radius: 3px;
 
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 
     padding: 1rem;
     padding-right: 1rem;
     padding-bottom: 0rem;
     height: auto;
+}
+
+@media screen and (min-width: 547px)
+{
+    #info {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 #current li, #programming li, #math li, #art li {
@@ -464,6 +478,18 @@ h1 a {
     font-weight: normal;
     font-size: 27px;
     text-decoration: none;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+td {
+    padding: 0.25rem;
+}
+th {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 /* Slides */
