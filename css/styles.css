@@ -110,7 +110,7 @@ header{
     margin-left: 0.5rem;
     width: 10rem;
   }
-  
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -125,10 +125,16 @@ header{
     }
   .show {display:block;}
 
-  .subpageLink a{
-    text-decoration: none;
-    font-size: 20px;
-  }
+    .subpageLink a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .subpageLink a:focus{
+        text-decoration-line: underline;
+    } 
+    .subpageLink a:hover{
+        text-decoration-line: underline;
+    }
 
   #academics {
     grid-area: academics;
@@ -146,12 +152,13 @@ header{
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border-radius: 3px;
-    margin-right: -2rem;
+    margin-right: -.5rem;
+    margin-left: -.25rem;
 
     padding: 0.5rem;
 
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 #contact{
@@ -161,9 +168,11 @@ header{
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
     border-radius: 3px;
-    margin-right: -2rem;
+    margin-right: -.5rem;
+    margin-left: -.25rem;
 
     padding: 0.5rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 860px){
@@ -177,7 +186,23 @@ header{
     
         padding: 0.5rem;
         padding-bottom: 2.75rem;
-        height: 3rem;
+        height: 6rem;
+    }
+
+    #bio{
+        background-color: #1c2051e0;
+    
+        grid-area: bio;
+    
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        border-radius: 3px;
+        margin-right: -2rem;
+    
+        padding: 0.5rem;
+    
+        text-align: center;
+        font-size: 20px;
     }
 }
 #contact p{
@@ -213,9 +238,13 @@ header{
 }
 
 .project p, .project h4, .project img{
-    margin-top: -0.5rem;
+    margin-top: -0.25rem;
     margin-bottom: 0.5rem;
     text-align: left;
+}
+
+#current h4, #programming h4, #math h4, #art h4{
+    margin-top: 0.5rem;
 }
 
 .date{
@@ -223,6 +252,9 @@ header{
 }
 
 /* Standard Links */
+a{
+    text-decoration: none;
+}
 a:link{
     color: #ca92ff;
 } 
@@ -231,9 +263,11 @@ a:visited{
 } 
 a:focus{
     color: #b893fc;
+    text-decoration-line: underline;
 } 
 a:hover{
     color: rgb(208, 140, 240);
+    text-decoration-line: underline;
 }
 a:active{
     color: #e8acf0;
@@ -242,7 +276,7 @@ a:active{
 h1, h2, h3, h4{
     font-family: 'Rowdies', cursive;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 27px;
 }
 
 h2{
@@ -251,6 +285,19 @@ h2{
 
 h4{
     font-size: 20px;
+}
+
+#bio h4{
+    margin-bottom: 0.25rem;
+}
+
+#bio a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#info h3{
+    margin-top: -0.5rem;
 }
 
 #contact h3{
@@ -285,16 +332,20 @@ header img{
 #neo-versailles {
     margin-left: -1rem; 
     margin-right: -1rem;
-    height: 59.5%;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
-    #neo-versailles {margin-left: 30%;}
+    #neo-versailles {
+        margin-left: 30%;
+        height: auto;
+    }
 }
 
 #directX-11 {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -304,6 +355,7 @@ header img{
 #changeling {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -313,6 +365,7 @@ header img{
 #game-jam {
     margin-left: -1rem; 
     margin-right: -1rem;
+    height: auto;
 } 
 @media screen and (min-width: 758px)
 {
@@ -334,7 +387,7 @@ header img{
 }
 @media screen and (min-width: 758px){
     #projects img{
-        width: 60%;
+        width: 100%;
     }
 }
 
@@ -344,19 +397,24 @@ header img{
 }
 
 .project a:link{
-    color: rgb(229, 228, 236);
+    color: rgb(235, 232, 240);
+    text-decoration: none;
 } 
 .project a:visited{
-    color: rgb(199, 202, 206);
+    color: rgb(235, 232, 240);
+    text-decoration: none;
 } 
 .project a:focus{
     color: rgb(235, 231, 241);
+    text-decoration-line: underline;
 } 
 .project a:hover{
     color: rgb(189, 229, 253);
+    text-decoration-line: underline;
 }
 .project a:active{
     color: rgb(176, 237, 255);
+    text-decoration: none;
 }
 
 /* ACADEMICS */
@@ -377,21 +435,25 @@ header img{
     background-color: #1c2051e0;
     border-radius: 3px;
 
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-top: 1.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 
     padding: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
+    height: auto;
 }
 
-#info h3 {
-    padding-top: 0rem;
+@media screen and (min-width: 547px)
+{
+    #info {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 }
 
 #current li, #programming li, #math li, #art li {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 900px)
@@ -414,6 +476,98 @@ header img{
 h1 a {
     font-family: 'Rowdies', cursive;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 27px;
     text-decoration: none;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+td {
+    padding: 0.25rem;
+}
+th {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Slides */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slides-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

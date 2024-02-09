@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/functionality.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rowdies:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="../media/favicon.png" sizes="32x32" />
+
+        <title>Changeling</title>
+    </head>
+    <body style="background-image: url('../media/star_map.png');background-size: 150%;background-position: center;">
+        <header>
+            <div id="title">
+                <h1><a href="../index.html">Holly Allen</a></h1>
+            </div>
+            <div id="navigation">
+                <div class="dropdown">
+                    <button onclick="dropDown()" class="dropbtn">Projects</button>
+
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="../index.html#changeling">Changeling</a>
+                        <a href="../index.html#directX-11">DirectX 11</a>
+                        <a href="../index.html#game-jam">Game Jams</a>
+                        <a href="../index.html#neo-versailles">Neo-Versailles</a>
+                    </div>
+                </div>
+                <div class="subpageLink">
+                    <div id="academics"><a href="academics.html">Academics</a></div>
+                </div>
+
+                 <!-- <img src="../media/crow.png" alt="Crow digital painting"> -->
+            </div>
+        </header>
+
+        <div id="info" margin-top="">
+            <h3>Extra Changeling Data</h3>
+            <h4>FPS</h4>
+            7/14/23
+            <table>
+              <tr>
+                <th>Level</th>
+                <th>Average</th>
+                <th>Quest 2<br>i7-11700k</th>
+                <th>Rift S<br>Intel I7-6700k</th>
+                <th>PC<br>Ryzen 5800X</th>
+                <th>Quest 2<br>i7-9750H</th>
+                <th>PC<br>Ryzen 7 3700X</th>
+                <th>Quest 2*<br>i7-10750H</th>
+                <th>Quest 1*<br>i9-11900H</th>
+                <th>PC<br>Ryzen 7 5700x</th>
+              </tr>
+              <tr>
+                <td>Onboarding</td>
+                <td>102 fps</td>
+                <td>114-120 fps</td>
+                <td>80 fps</td>
+                <td>116-120 fps</td>
+                <td>120 fps</td>
+                <td>120 fps</td>
+                <td>71-72 fps</td>
+                <td>71-72 fps</td>
+                <td>120 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Apartment</td>
+                  <td>103 fps</td>
+                  <td>114-120 fps</td>
+                  <td>80 fps</td>
+                  <td>116-128 fps</td>
+                  <td>120 fps</td>
+                  <td>119-123 fps</td>
+                  <td>71-72 fps</td>
+                  <td>71-72 fps</td>
+                  <td>120 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Street</td>
+                  <td>92 fps</td>
+                  <td>116-120 fps</td>
+                  <td>40-80 fps</td>
+                  <td>116-125 fps</td>
+                  <td>60 fps</td>
+                  <td>114-120 fps</td>
+                  <td>71-72 fps</td>
+                  <td>35-36 fps</td>
+                  <td>116-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Home</td>
+                  <td>85 fps</td>
+                  <td>120 fps</td>
+                  <td>40-80 fps</td>
+                  <td>116-120 fps</td>
+                  <td>60 fps</td>
+                  <td>110-120 fps</td>
+                  <td>71-72 fps, lower after front door</td>
+                  <td>12-72 fps, 35 avg.</td>
+                  <td>120 fps</td>
+              </tr>
+              <tr>
+                  <td>Mind Palace</td>
+                  <td>99 fps</td>
+                  <td>110-120 fps</td>
+                  <td>70-90 fps</td>
+                  <td>100-150 fps</td>
+                  <td>120 fps, after change 60-120fps</td>
+                  <td>126-130 fps</td>
+                  <td>68-70 fps</td>
+                  <td>71-72 fps</td>
+                  <td>112-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Mother's Level</td>
+                  <td>72 fps</td>
+                  <td>60 fps</td>
+                  <td>40 fps</td>
+                  <td>110-130 fps</td>
+                  <td>30-60 fps</td>
+                  <td>118-121 fps</td>
+                  <td>36 fps</td>
+                  <td>18-35 fps</td>
+                  <td>106-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Father's Level</td>
+                  <td>99 fps</td>
+                  <td>108-130 fps</td>
+                  <td>40-80 fps</td>
+                  <td>115-130 fps</td>
+                  <td>100 fps</td>
+                  <td>118-140 fps</td>
+                  <td>70-72 fps</td>
+                  <td>65-80 fps</td>
+                  <td>110-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Douglas's Level</td>
+                  <td>102 fps</td>
+                  <td>120 fps</td>
+                  <td>80 fps</td>
+                  <td>115-120 fps</td>
+                  <td>120 fps</td>
+                  <td>115-120 fps</td>
+                  <td>71-72 fps</td>
+                  <td>71-72 fps</td>
+                  <td>116-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Kirsten's Level</td>
+                  <td>102 fps</td>
+                  <td>120 fps</td>
+                  <td>80 fps</td>
+                  <td>115-120 fps</td>
+                  <td>120 fps</td>
+                  <td>115-120 fps</td>
+                  <td>71-72 fps</td>
+                  <td>71-72 fps</td>
+                  <td>116-120 fps</td>
+              </tr>
+            </table> 
+            *Note: ASW (asynchronous spacewarp) which caps the frame rate if there are large fluctuations
+            <br><br>
+            7/28/23
+            <table>
+              <tr>
+                <th>Level</th>
+                <th>Average</th>
+                <th>PC<br>Intel i9-9980HK</th>
+                <th>Quest 2<br>i7-9750H</th>
+                <th>PC<br>Ryzen 7 3700X</th>
+                <th>PC<br>Ryzen 7 5700x</th>
+              </tr>
+              <tr>
+                <td>Onboarding</td>
+                <td>120 fps</td>
+                <td>120 fps</td>
+                <td>120 fps</td>
+                <td>120 fps</td>
+                <td>116-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Apartment</td>
+                  <td>119 fps</td>
+                  <td>120 fps</td>
+                  <td>120 fps</td>
+                  <td>120 fps</td>
+                  <td>112-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Street</td>
+                  <td>103 fps</td>
+                  <td>120 fps</td>
+                  <td>60 fps</td>
+                  <td>120 fps</td>
+                  <td>105-116 fps</td>
+              </tr>
+              <tr>
+                  <td>Intro Noir - Home</td>
+                  <td>102 fps</td>
+                  <td>114-120 fps</td>
+                  <td>60 fps</td>
+                  <td>110-120 fps</td>
+                  <td>110-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Mother's Level</td>
+                  <td>80 fps</td>
+                  <td>58-112 fps</td>
+                  <td>30 fps</td>
+                  <td>87-92 fps</td>
+                  <td>112-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Father's Level</td>
+                  <td>104 fps</td>
+                  <td>120 fps</td>
+                  <td>30-100 fps</td>
+                  <td>110 fps</td>
+                  <td>116-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Douglas's Level</td>
+                  <td>119 fps</td>
+                  <td>120 fps</td>
+                  <td>120 fps</td>
+                  <td>113-120 fps</td>
+                  <td>116-120 fps</td>
+              </tr>
+              <tr>
+                  <td>Kirsten's Level</td>
+                  <td>119 fps</td>
+                  <td>119 fps</td>
+                  <td>120 fps</td>
+                  <td>115-120 fps</td>
+                  <td>  </td>
+              </tr>
+            </table> 
+            <br>
+        </div>
+    </body>
+</html>

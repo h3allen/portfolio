@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <script src="../js/functionality.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rowdies:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="../media/favicon.png" sizes="32x32" />
+
+        <title>DirectX 11</title>
+    </head>
+    <body style="background-image: url('../media/star_map.png');background-size: 150%;background-position: center;">
+        <header>
+            <div id="title">
+                <h1><a href="../index.html">Holly Allen</a></h1>
+            </div>
+            <div id="navigation">
+                <div class="dropdown">
+                    <button onclick="dropDown()" class="dropbtn">Projects</button>
+
+                    <div id="dropdownMenu" class="dropdown-content">
+                        <a href="../index.html#changeling">Changeling</a>
+                        <a href="../index.html#directX-11">DirectX 11</a>
+                        <a href="../index.html#game-jam">Game Jams</a>
+                        <a href="../index.html#neo-versailles">Neo-Versailles</a>
+                    </div>
+                </div>
+                <div class="subpageLink">
+                    <div id="academics"><a href="academics.html">Academics</a></div>
+                </div>
+
+                <!-- <img src="../media/crow.png" alt="Crow digital painting"> -->
+            </div>
+        </header>
+
+        <div id="info" margin-top="">
+            <h3>DirectX 11</h3>
+            The Game Graphics I course at RIT covered the basics of 3D rendering in DirectX 11. Professor Chris Cascioli provided starter code for Windows application setup, obj file reading, 
+            and demo code for creating objects and rendering them. From that point, I had to create cameras, render new 3D objects using constructed classes, create materials from different 
+            texture maps, create and render a skybox, create lights, and a post-process blur effect.
+            <br><br>
+            <img src="../media/blank.jpg" width="75%"> <!--Class Architecture-->
+            <br>
+            <br>The objects, cameras, lights, and post-process are all editable and visible in a DearImGUI window.
+            <br><br>
+            <video width="80%" controls>
+                <source src="../media/DirectX11_Light.mp4" type="video/mp4">
+            </video>
+             <!--Gif/Video of DearImGUI-->
+            <br>
+            <br>Using what I learned about optimization, lighting and post-process effects, I was able to identify some key issues occurring in <a href="neo-versailles.html">Neo-Versailles</a>.
+            That project suffered from a lack of lighting optimization and didn't use Unity's culling volumes to assist with the high volume of 3D objects present in levels. Much of the VFX 
+            were also spawning large numbers of particles each frame.
+            <video width="80%" controls>
+                <source src="../media/DX11_PP.mp4" type="video/mp4">
+            </video>
+            <br><br>
+        </div>
+    </body>
+</html>
