@@ -1,0 +1,25 @@
+/* ACADEMICS */
+#current, #programming, #math, #art {
+    background-color: #1c2051e0;
+    border-radius: 3px;
+
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1rem;
+
+    padding-left: 0.5rem;
+    padding-right: -0.5rem;
+    padding-top: 0.001rem;
+    padding-bottom: 0.001rem;
+}
+
+#current li, #programming li, #math li, #art li {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 900px)
+{
+    #coursework{
+        margin-right: -0%;
+    }
+}
