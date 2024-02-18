@@ -1,227 +1,227 @@
 *{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
 }
 body{
-    color: rgb(235, 232, 240);    
-    margin: 3rem;
+  color: rgb(235, 232, 240);    
+  margin: 3rem;
 
-    display: grid;
-    grid-template-areas: 
-    "header     header      header      header"
-    "bio        bio     bio     bio"
-    "contact    contact     contact     contact"
-    "projects   projects    projects        projects"
-    "projects   projects    projects        projects"
-    "footer     footer      footer      footer";
+  display: grid;
+  grid-template-areas: 
+  "header     header      header      header"
+  "bio        bio     bio     bio"
+  "contact    contact     contact     contact"
+  "projects   projects    projects        projects"
+  "projects   projects    projects        projects"
+  "footer     footer      footer      footer";
 
-    font-family: 'Source Sans Pro, sans-serif';
+  font-family: 'Source Sans Pro, sans-serif';
 }
 
 @media screen and (min-width: 860px)
 {
-    body{
-        grid-template-areas: 
-        "header     header      header      header"
-        "bio        bio         empty     contact"
-        "projects   projects    projects     projects"
-        "projects   projects    projects     projects"
-        "footer     footer      footer      footer";
-    }
+  body{
+    grid-template-areas: 
+    "header     header      header      header"
+    "bio        bio         empty     contact"
+    "projects   projects    projects     projects"
+    "projects   projects    projects     projects"
+    "footer     footer      footer      footer";
+  }
 }
 
 @media screen and (max-width: 470px)
 {
-    .subpageLink {
-        padding-left: 20%;
-    }
+  .subpageLink {
+    padding-left: 20%;
+  }
 }
 
 header{
-    background-color: #19234c;
+  background-color: #19234c;
 
-    grid-area: header;
+  grid-area: header;
 
-    margin-left: -3rem;
-    margin-right: -3rem;
-    margin-top: -3rem;
-    margin-bottom: 0.5rem;
+  margin-left: -3rem;
+  margin-right: -3rem;
+  margin-top: -3rem;
+  margin-bottom: 0.5rem;
 
-    padding: 0.5rem;
-    padding-bottom: 0.4rem;
+  padding: 0.5rem;
+  padding-bottom: 0.4rem;
 }
 
 .navigation {
-    display: inline-grid;
-    grid-template-columns: "projects" "academics" "about";
-    column-gap: 0.5rem;
+  display: inline-grid;
+  grid-template-columns: "projects" "academics" "about";
+  column-gap: 0.5rem;
 }
 
 #title{
-    margin-left: 0.5rem;
-    margin-bottom: -1rem;
-    margin-top: -1rem;
+  margin-left: 0.5rem;
+  margin-bottom: -1rem;
+  margin-top: -1rem;
 }
 
 /* Dropdown Button */
 .dropbtn {
-    background-color: #19234c;
-    color: rgb(232, 229, 236);
+  background-color: #19234c;
+  color: rgb(232, 229, 236);
 
-    margin-left: 0.5rem;
-    padding: 16px;
-    padding-top: 5px;
+  margin-left: 0.5rem;
+  padding: 16px;
+  padding-top: 5px;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    border: none;
-    cursor: pointer;
-    border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
 
-    width: 6rem;
-    height: 2rem;
+  width: 6rem;
+  height: 2rem;
 
-    grid-area: projects;
-    grid-column-start: 0;
-    grid-column-end: 1;
-  }
-  
-  .dropbtn:hover, .dropbtn:focus {
-    background-color: #19234c;
-    color: rgb(232, 229, 236);
-  }
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-top: 1rem;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-
-    background-color: #1f2b5a;
-    border: #6358a1;
-
-    border-radius: 5px;
-    min-width: 160px;
-
-    margin-left: 0.5rem;
-    width: 10rem;
+  grid-area: projects;
+  grid-column-start: 0;
+  grid-column-end: 1;
   }
 
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #19234c;
+  color: rgb(232, 229, 236);
+}
 
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {
-      background-color: #1e2c5c;
-      border-radius: 3px;
-    }
-  .show {display:block;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 1rem;
+}
 
-    .subpageLink a{
-        text-decoration: none;
-        font-size: 20px;
-    }
-    .subpageLink a:focus{
-        text-decoration-line: underline;
-    } 
-    .subpageLink a:hover{
-        text-decoration-line: underline;
-    }
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  background-color: #1f2b5a;
+  border: #6358a1;
+
+  border-radius: 5px;
+  min-width: 160px;
+
+  margin-left: 0.5rem;
+  width: 10rem;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #1e2c5c;
+  border-radius: 3px;
+}
+.show {display:block;}
+
+.subpageLink a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.subpageLink a:focus{
+  text-decoration-line: underline;
+} 
+.subpageLink a:hover{
+  text-decoration-line: underline;
+}
 
 /* Standard Links */
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 a:link{
-    color: #ca92ff;
+  color: #ca92ff;
 } 
 a:visited{
-    color: #b993dd;
+  color: #b993dd;
 } 
 a:focus{
-    color: #b893fc;
-    text-decoration-line: underline;
+  color: #b893fc;
+  text-decoration-line: underline;
 } 
 a:hover{
-    color: rgb(208, 140, 240);
-    text-decoration-line: underline;
+  color: rgb(208, 140, 240);
+  text-decoration-line: underline;
 }
 a:active{
-    color: #e8acf0;
+  color: #e8acf0;
 }
 
 h1, h2, h3, h4{
-    font-family: 'Rowdies', cursive;
-    font-weight: normal;
-    font-size: 27px;
+  font-family: 'Rowdies', cursive;
+  font-weight: normal;
+  font-size: 27px;
 }
 
 h2{
-    margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 h4{
-    font-size: 20px;
+  font-size: 20px;
 }
 
 #bio h4{
-    margin-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 #bio a{
-    font-size: 20px;
-    text-decoration: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 img{
-    border-radius: 3px;
-    border: #22305c;
-    border-style: solid;
-    border-width: 3px;
+  border-radius: 3px;
+  border: #22305c;
+  border-style: solid;
+  border-width: 3px;
 }
 
 header img{
-    float: right;
-    width: 8rem;
+  float: right;
+  width: 8rem;
 
-    margin-bottom: -.25rem;
-    margin-right: -.5rem;
-    border-radius: 0px;
-    border: none;
+  margin-bottom: -.25rem;
+  margin-right: -.5rem;
+  border-radius: 0px;
+  border: none;
 }
 #academics {
-    grid-area: academics;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    margin-top: -30px;
-    margin-left: 27%;
+  grid-area: academics;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  margin-top: -30px;
+  margin-left: 27%;
 }
 
 h1 a {
-    font-family: 'Rowdies', cursive;
-    font-weight: normal;
-    font-size: 27px;
-    text-decoration: none;
+  font-family: 'Rowdies', cursive;
+  font-weight: normal;
+  font-size: 27px;
+  text-decoration: none;
 }
 
 table, th, td {
-    border-collapse: collapse;
-    border: 1px solid;
+  border-collapse: collapse;
+  border: 1px solid;
 }
 td {
-    padding: 0.25rem;
+  padding: 0.25rem;
 }
 th {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 /* Slides */
