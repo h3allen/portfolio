@@ -140,11 +140,8 @@ header{
 a{
   text-decoration: none;
 }
-a:link{
-  color: #ca92ff;
-} 
-a:visited{
-  color: #b993dd;
+a:link, a:visited{
+  color: #e0beff;
 } 
 a:focus{
   color: #b893fc;
@@ -203,6 +200,10 @@ header img{
   grid-column-end: 2;
   margin-top: -30px;
   margin-left: 27%;
+}
+
+#academics a:visited, #academics a:link{
+  color: rgb(232, 229, 236);
 }
 
 h1 a {
