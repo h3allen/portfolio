@@ -1,0 +1,52 @@
+#info h3{
+    margin-top: -0.5rem;
+}
+
+#info {
+    background-color: #1c2051e0;
+    border-radius: 3px;
+
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+
+    padding: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0rem;
+    height: auto;
+}
+
+@media screen and (min-width: 547px)
+{
+    #info {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+
+@media screen and (min-width: 900px)
+{
+    #info {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+    
+        padding: 1rem;
+        padding-right: 4.5rem;
+        padding-bottom: 1rem;
+    }
+}
+
+#info .youtube-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+#info .youtube-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
