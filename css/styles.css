@@ -10,24 +10,11 @@ body{
   grid-template-areas: 
   "header     header      header      header"
   "bio        bio     bio     bio"
-  "contact    contact     contact     contact"
   "projects   projects    projects        projects"
   "projects   projects    projects        projects"
   "footer     footer      footer      footer";
 
   font-family: 'Source Sans Pro, sans-serif';
-}
-
-@media screen and (min-width: 860px)
-{
-  body{
-    grid-template-areas: 
-    "header     header      header      header"
-    "bio        bio         empty     contact"
-    "projects   projects    projects     projects"
-    "projects   projects    projects     projects"
-    "footer     footer      footer      footer";
-  }
 }
 
 @media screen and (max-width: 470px)
@@ -53,7 +40,7 @@ header{
 
 .navigation {
   display: inline-grid;
-  grid-template-columns: "projects" "academics" "about";
+  grid-template-columns: "projects" "contact";
   column-gap: 0.5rem;
 }
 
@@ -68,7 +55,7 @@ header{
   background-color: #19234c;
   color: rgb(232, 229, 236);
 
-  margin-left: 0.5rem;
+  margin-left: 0rem;
   padding: 16px;
   padding-top: 5px;
 
@@ -194,15 +181,14 @@ header img{
   border-radius: 0px;
   border: none;
 }
-#academics {
-  grid-area: academics;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  margin-top: -30px;
-  margin-left: 27%;
+#contact {
+  grid-area: contact;
+  text-align: right;
+  margin-top: -2rem;
+  padding-right: 1rem;
 }
 
-#academics a:visited, #academics a:link{
+#contact a:visited, #contact a:link{
   color: rgb(232, 229, 236);
 }
 

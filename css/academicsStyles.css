@@ -23,3 +23,7 @@
         margin-right: -0%;
     }
 }
+
+#current h4, #programming h4, #math h4, #art h4{
+    margin-top: 0.5rem;
+}
