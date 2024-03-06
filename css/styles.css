@@ -112,6 +112,29 @@ header{
 }
 .show {display:block;}
 
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 12px;
+  background-color: #515264;
+  border-radius: 4px;
+  padding: 5px 5px 5px 5px;
+  top: 25px;
+  left: -50%;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
 .subpageLink a{
   text-decoration: none;
   font-size: 20px;
