@@ -5,11 +5,13 @@
 
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
     border-radius: 3px;
 
-    padding: 0.5rem;
+    padding: 1rem;
 
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -27,8 +29,8 @@
     background-color: #1c2051e0;
     border-radius: 3px;
 
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
     margin-top: 4rem;
 
     padding: 1rem;
@@ -36,6 +38,38 @@
     text-align: center;
 
 }
+
+#bio #current
+{
+    text-align: center;
+}
+
+@media screen and (min-width: 601px){
+    .project {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+
+    #bio
+    {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+    }
+}
+
+@media screen and (min-width: 1201px){
+    .project {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    #bio
+    {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
 
 .project p, .project h4, .project img{
     margin-top: -0.25rem;
@@ -60,27 +94,19 @@
 
 /* PROJECTS */
 #neo-versailles {
-    margin-left: -1rem; 
-    margin-right: -1rem;
     height: auto;
 } 
 
 #directX-11 {
-    margin-left: -1rem; 
-    margin-right: -1rem;
     height: auto;
 } 
 
 #changeling {
-    margin-left: -1rem; 
-    margin-right: -1rem;
     height: auto;
 } 
 
 
 #game-jam {
-    margin-left: -1rem; 
-    margin-right: -1rem;
     height: auto;
 } 
 

@@ -39,7 +39,7 @@
                 <div id="contact">
                     <a href="https://www.linkedin.com/in/holly-allen-7a04881b5/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-2x" style="color: #ebe8f0;"></i></a>
                     &nbsp;&nbsp;&nbsp;<a href="https://github.com/h3allen" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-2x" style="color: #ebe8f0;" ></i></a>
-                    &nbsp;&nbsp;&nbsp;<a href="media/Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0;"></i></a>
+                    &nbsp;&nbsp;&nbsp;<div class="tooltip"><a href="media/Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0;"></i></a><span class="tooltip-text">Resume</span></div>
                 </div>
 
 
@@ -49,12 +49,14 @@
 
         <div id="bio">
             Hi! I'm a fourth year Game Design and Development student at Rochester Institute of Technology and I specialize in programming and technical art.
-            <br>
+            <br><br>
             Outside of classes, I participate in game jams and group projects. I've founded and hold an eboard position for the student organization Queer in STEM (QSTEM), which was founded to help foster a welcoming community for queer STEM students on campus.
             <br>
-            <h4>Currently Working On:</h4>
-            PS5 Production Studio: All-Wheel Brawl<br>
-            Game Graphics Programming II: DirectX 12
+            <div id="current">
+                <h4>Currently Working On:</h4>
+                PS5 Production Studio: All-Wheel Brawl<br>
+                Game Graphics Programming II: DirectX 12
+            </div>
         </div>
 
         <div id="projects">
@@ -86,12 +88,12 @@
             <div class="project" id="directX-11">
                 <a href="subpages/directX-11.html"><h4>DirectX 11</h4></a>
                 <div class="containter">
-                    <img src="media/DirectX11_PP.gif">
+                    <img src="media/DirectX11_PP.gif" alt="Animated image of lit spheres and cubes moving through space with a post-process blur being applied">
                 </div>
                 <p>
                     <br>
                     In the Spring 2023 semester, I took Chris Cascioli's Game Graphics Programming I class. The course focused on the basics on graphics engines using DirectX 11. 
-                    Using Professor Cascioli's code as a base, the final DirectX project can load obj files, create point and ??? lights, use multiple different types of texture maps to create materials, 
+                    Using Professor Cascioli's code as a base, the final DirectX project can load obj files, create directional and point lights, use multiple different types of texture maps to create materials, 
                     and has an adjustable radial blur around the camera. 
                     <br><br>
                     <b>Skills:</b><br>
@@ -104,18 +106,18 @@
             <div class="project" id="changeling">
                 <a href="subpages/changeling.html"><h4>Changeling</h4></a>
                 <div class="container">
-                    <img src="media/blank.jpg">
+                    <img src="media/blank.jpg" alt="Gameplay image of the Mind Palace level">
                 </div>
                 <p>
-                    <br>
+                    <br>                    
+                    My role as the lead technical artist on the project was to coordinate visual changes to the game in conjunction with the art 
+                    team and to ensure that the game was ready for early access by the end of the year. That summer was the first time <i>Changeling</i> had dedicated 
+                    technical artists and we increased the overall framerates from as low as 6 to as high 200 fps. The visuals had drastically 
+                    different styles due to the majority of the assets being free or bought assets from various asset stores. 
+                    <br><br>
                     During Summer 2023 I worked on the entrepreneurial co-op project <i>Changeling</i>. <i>Changeling</i> is a VR game where the player explores mindscapes 
                     of members of a family to solve the mystery of what happened to the baby. At the time I joined the project, it had been in development
                     for around 3 years. 
-                    <br><br>
-                    My role as the lead technical artist on the project was to coordinate visual changes to the game in conjunction with the art 
-                    team and to ensure that the game was ready for early access by the end of the year. That summer was the first time <i>Changeling</i> had dedicated 
-                    technical artists and the game suffered from increasingly low frame rates, making some scenes nauseating to play through. The visuals had drastically 
-                    different styles due to the majority of the assets being free or bought assets from various asset stores. 
                     <br><br>
                     <b>Skills:</b><br>
                     Unreal Engine 4, Lighting & Material Optimization, Art Pipeline, Technical Documentation, Perforce
@@ -132,27 +134,27 @@
                 <div class="slides-container">
                     <div class="slides fade">
                         <div class="text">Hat Bird</div>
-                        <img src="media/hatbird.png" style="width:100%">
+                        <img src="media/hatbird.png" style="width:100%" alt="Bird behind table with three items on it: a knife, bottlecaps, and a pen">
                     </div>
 
                     <div class="slides fade">
                         <div class="text">Fish</div>
-                        <img src="media/fish.png" style="width:100%">
+                        <img src="media/fish.png" style="width:100%" alt="First-person image of a fishing rod over the water next to a monster">
                     </div>
 
                     <div class="slides fade">
                         <div class="text">Decaying Orbit</div>
-                        <img src="media/decaying-orbit.png" style="width:100%">
+                        <img src="media/decaying-orbit.png" style="width:100%" alt="Pink paper cutout of a person next to a torn cutout of a person sitting in a hallway">
                     </div>
 
                     <div class="slides fade">
                         <div class="text">Fish-ticuffs</div>
-                        <img src="media/fish-ticuffs.png" style="width:100%">
+                        <img src="media/fish-ticuffs.png" style="width:100%" alt="Gameplay image of a squid fighting a mantis shrimp with boxing glove projectiles">
                     </div>
 
                     <div class="slides fade">
                         <div class="text">Snowbringer</div>
-                        <img src="media/snowbringer.png" style="width:100%">
+                        <img src="media/snowbringer.png" style="width:100%" alt="Debug image of a snowy scene with scattered rocks and trees">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
