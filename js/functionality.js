@@ -23,51 +23,50 @@ window.onclick = function(event)
   }
 }
 
+// Slides carousel
+//let slideIndex = [1,1];
+let slideId = ["currentSlides", "slides"];
+
 window.onload = function() {
-  slideIndex = 1;
-  showSlides(slideIndex);
+ slideIndex = [0,0];
+ showSlides(0, 0);
+ showSlides(0, 1);
 };
 
-// Slides carousel
-let slideIndex = 0;
-
 // Next/previous slide
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
 // Thumbnail image control
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, no) {
+  showSlides(slideIndex[no] = n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) 
-  {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  {
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  }
+let slideIndex = [0,0];
+/* Class the members of each slideshow group with different CSS classes */
+//let slideId = ["mySlides1", "mySlides2"]
+showSlides(0, 0);
+showSlides(0, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
-/*function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+function showSlides(n, no) {
+  console.log("n value: " + n + " no value: " + no + " slide class name: " + slideId[no]);
+  let x = document.getElementsByClassName(slideId[no]);
+  console.log(x.length);
+
+  if (n > x.length - 1) {
+    slideIndex[no] = 0;
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-} */
-/* In case desired in future reference: https://jefferson-cuartas.medium.com/how-to-create-a-flip-card-effect-using-javascript-767dd945210c */
+  if (n < 0) {
+    slideIndex[no] = x.length - 1;
+  }
+  console.log("new n value: " + n);
+
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  console.log("final n value: " + n);
+  x[slideIndex[no]].style.display = "block";
+}
