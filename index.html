@@ -52,14 +52,36 @@
             <br><br>
             Outside of classes, I participate in game jams and group projects. I've founded and hold an eboard position for the student organization Queer in STEM (QSTEM), which was founded to help foster a welcoming community for queer STEM students on campus.
             <br>
-            <div id="current">
-                <h4>Currently Working On:</h4>
-                PS5 Production Studio: All-Wheel Brawl<br>
-                Game Graphics Programming II: DirectX 12
-            </div>
         </div>
 
         <div id="projects">
+            <div class="project" id="current">
+                <h4>Current Projects</h4>
+                <div class="slides-container">
+                    <div class="currentSlides fade">
+                        <div class="text">PS5 Engine: All-Wheel Brawl</div>
+                        <video width="100%" controls>
+                            <source src="media/engine_preview.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="currentSlides fade">
+                        <div class="text">DirectX 12</div>
+                        <img src="media/dx_12.gif" style="width:100%" alt="Cube, torus, and sphere lit from one side with a pink light while moving and rotating">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(0, 0)"></span>
+                    <span class="dot" onclick="currentSlide(1, 0)"></span>
+                </div>
+                <p>
+                    <div class="date">January 2024 - Current</div>
+                </p>
+            </div>
             <!-- NEO-VERSAILLES -->
             <div class="project" id="neo-versailles">
                 <a href="subpages/neo-versailles.html"><h4>Painted World: Neo-Versailles</h4></a>
@@ -78,6 +100,8 @@
                     <br><br>
                     <b>Skills:</b><br>
                     C#, Unity Engine, Perforce, Jira, Confluence, Technical Documentation
+                    <br><br>
+                    <b>Team Size:</b> 30
                     <br><br>
                     The basis of the inventory code created by both myself and another RIT student, Megan Schier, is being utilized in this year's collaborations with ArtCenter.
                     <br>
@@ -98,6 +122,8 @@
                     <br><br>
                     <b>Skills:</b><br>
                     DirectX 11, Dear ImGUI, C++
+                    <br><br>
+                    <b>Team Size:</b> Solo
                     <br>
                     <div class="date">January - May 2023</div>
                 </p>
@@ -121,6 +147,8 @@
                     <br><br>
                     <b>Skills:</b><br>
                     Unreal Engine 4, Lighting & Material Optimization, Art Pipeline, Technical Documentation, Perforce
+                    <br><br>
+                    <b>Team Size:</b> 80
                     <br><br>
                     <i>Changeling</i> updates can be found <a href="https://www.changelingvr.com/" target="_blank" rel="noopener">here</a>.
                     <br><br>
@@ -159,16 +187,16 @@
                         <img src="media/snowbringer.png" style="width:100%" alt="Debug image of a snowy scene with scattered rocks and trees">
                     </div>
 
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
                 </div>
                 <br>
                 <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(0, 1)"></span>
+                    <span class="dot" onclick="currentSlide(1, 1)"></span>
+                    <span class="dot" onclick="currentSlide(2, 1)"></span>
+                    <span class="dot" onclick="currentSlide(3, 1)"></span>
+                    <span class="dot" onclick="currentSlide(4, 1)"></span>
                   </div>
                 <p>
                     <br>

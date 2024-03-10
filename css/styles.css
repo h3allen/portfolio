@@ -222,16 +222,51 @@ h1 a {
   text-decoration: none;
 }
 
-table, th, td {
+/* Table */
+table-wrapper {
+  width: min(900px, 100% - 3rem);
+  margin-inline: auto;
+}
+
+table {
+  width: 100%;
+  background-color: #1e2e6c;
   border-collapse: collapse;
-  border: 1px solid;
 }
-td {
-  padding: 0.25rem;
+
+th, td {
+  padding: 1rem;
+  text-align: left;
 }
+
 th {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  background-color: #253b93;
+}
+
+tr:nth-of-type(2n)
+{
+  background-color: #1e317d;
+}
+
+@media (max-width: 650px) {
+
+  th {
+    display: none;
+  }
+  td {
+    display: grid;
+    grid-template-columns: 15ch auto;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
 }
 
 /* Slides */
