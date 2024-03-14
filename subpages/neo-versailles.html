@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/subpageStyles.css">
         <link rel="stylesheet" href="../css/styles.css">
         <script src="../js/functionality.js"></script>
+        <script src="https://kit.fontawesome.com/4001d349c7.js" crossorigin="anonymous"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,11 +47,9 @@
 
         <div id="info" margin-top="">
             <h3>Painted World: Neo-Versailles</h3>
-            <i>Painted World: Neo-Versailles</i> was a collaboration between the ArtCenter College of Art and Design in 
-            California and Rochester Institute of Technology. The project was written in Unity, and used Perforce, Confluence,
-            and Jira for version control and project management. As an RIT student on the project, my main focus
-            was the technical needs of the project as a programmer. The project spanned the entire academic 2022 - 2023
-            year, starting for RIT in August and ending in May.
+            <i>Painted World: Neo-Versailles</i> was a collaboration between the ArtCenter College of Art and Design in California and Rochester Institute of Technology. 
+            The project was written in Unity, and used Perforce, Confluence, and Jira for version control and project management. As an RIT student on the project, my 
+            focus was on the technical needs of the project as a programmer. The project spanned the entire academic 2022 - 2023 year, starting for RIT in August and ending in May. 
             <br><br>
             The project was on display at two different RIT events: the Student Games Showcase and Imagine RIT.
             <br><br>
@@ -61,14 +60,12 @@
             </div>
 
             <h4>Inventory</h4>
-            The key part I worked on for the Fall semester was the inventory. It needed to be easily modifiable by
-            the designers, since the size and objects could change at any time during the development of the game. It also needed
-            to be effecient enough that it didn't contribute to signficant lag when accessed and the items within needed to be
-            identifiable. 
+            The key part I worked on for the Fall semester was the inventory. It needed to be easily modifiable by the designers since the size and objects could change at any time 
+            during the development of the game. It also needed to be efficient enough that it didn't contribute to significant lag when accessed and the items within needed to be identifiable. 
             <!--INVENTORY CLASS DIAGRAM-->
             <!--<img src="../media/blank.jpg" width="75%">-->
             <br><br>
-            The basics of the inventory works as follows:
+            The basics of the inventory work as follows:
             <br><br><b>Inventory.cs</b><br>
             Handles the actual inventory array, as well as any methods to add objects to it. The inventory array is 
             modifiable before the game starts up, but from that point on, the size couldn't be changed. If an item is used or removed,
@@ -108,45 +105,37 @@
             <!--FUNNY LITTE GIF OF THE GEARS TURNING :D-->
             <!--<img src="../media/blank.jpg" width="75%">-->
             <h4>Lighting</h4>
-            During the second semester of the development of <i>Painted World: Neo-Versailles</i>,
-            I spent most of my time working on performance improvements for the game. We were running
-            into issues where the frame rate would vary greatly between scenes, or the frames would be 
-            so low it looked like everything was smearing across the screen. As the visual development of
-            the game was the main focus of the spring, the game was slowly becoming unplayable.
+            During the second semester of the development of Painted World: Neo-Versailles, I spent most of my time working on performance improvements 
+            for the game. We were running into issues where the frame rate would vary greatly between scenes, or the frames would be so low it looked like 
+            everything was smearing across the screen. As the visual development of the game was the focus of the spring, the game was slowly becoming unplayable. 
             <br><br>
-            Some of our major issues were a lack of culling in scenes, and given the size of these scenes and
-            the polycount of our assets, it was straining most computers to run. This was fairly simple to solve
-            as Unity has tools to create culling volumes. These only required a little fixing when it came to doorways
-            as the player would only see a blank space after the door opened.
+            Some of our major issues were a lack of culling in scenes and given the size of these scenes and the polycount of our assets, it was straining most computers to run. 
+            This was simple to solve as Unity has tools to create culling volumes. These only required a little fixing when it came to doorways as the player would only see a blank 
+            space after the door opened. 
             <br><br>
-            Our biggest problem was lighting. A large part of the visuals created for <i>Neo-Versailles</i> relied
-            heavily upon the lighting used in-engine to produce the required emotion for players. Many of the team 
-            had never worked in Unity before, or were inexperienced with common techniques needed to optimize larger 
-            games.We What this meant on the technical end was that there were a large number of real-time lights 
-            created initially within the game.
+            Our biggest problem was lighting. A large part of the visuals created for Neo-Versailles relied heavily upon the lighting used in-engine to produce the required emotion for 
+            players. Due to inexperience with Unity as students, lights were created and left in real-time mode. This caused a drastic decrease in performance for the game. 
             <br><br>
 
             <img src="../media/NV_Lights.gif" alt="Animated image of lights flickering in a game scene" width="75%"> 
             <br><br>
-            The above example was our canery in the coal mine, so to speak. As the game progressed we started to see lights flickering 
-            in-engine while the game was running. After investigating the problem, I found that there was an extreme number of real-time
-            lights being used in that particular scene, totalling to 231 in the final lit version. 
+            The above example was our canary in the coal mine, so to speak. As the game progressed, we started to see lights flickering in-engine while the game was running. After investigating 
+            the problem, I found that there was an extreme number of real-time lights being used in that scene, totaling 231 in the final lit version. 
             <br><br>
-            Many of these lights were no longer providing any visuals but were still present and functioning during gameplay. 
-            As you can imagine, this scene ran incredibly slow, particularly given that it was the largest scene created for the game with 
-            very few large objects blocking the player's view. We <i>needed</i> this level in particular to have a high enough frame rate 
-            to be effective, given it was a chase scene with the player running away from the ever-persuing demon.
+            Many of these lights were no longer providing any visuals but were still present and functioning during gameplay. As you can imagine, this scene ran incredibly slow, particularly given 
+            that it was the largest scene created for the game with very few large objects blocking the player's view. We needed this level to have a high enough frame rate to be effective, given 
+            it was a chase scene with the player running away from the ever-pursuing demon. 
             <br><br>
 
             <img src="../media/jesus_hallway.jpg" alt="External view of game scene with overly bright lighting affecting some elements" width="75%">
             <br><br>
-            Another lighting issue we ran into was overlapping UVs. These overlaps causes parts of the map to be lit incorrectly, often to an
-            eye-watering degree as seen above. Some of these could be solved by recreating their lightmap UVs, removing the overlap. For others,
-            this option didn't work, leading to some of the truly strange lighting seen in later levels.
+            Another lighting issue we ran into was overlapping UVs. These overlaps cause parts of the map to be lit incorrectly, often to an eye-watering degree as seen above. Some of these could be 
+            solved by recreating their lightmap UVs, removing the overlap. For others, this option didn't work, leading to some of the truly strange lighting seen in later levels. 
 
             <br><br>
             Feel free to reach out via email if you would like to play the final version of the game or look at the code!
             <!-- GIF OF CREDITS -->
+            <br><br>
         </div>
     </body>
 </html>
