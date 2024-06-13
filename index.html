@@ -48,26 +48,20 @@
         </header>
 
         <div id="bio">
-            Hi! I'm a fourth year Game Design and Development student at Rochester Institute of Technology and I specialize in programming and technical art.
+            Hi! I'm a recent graduate from the Rochester Institute of Technology's Game Design and Development major and I specialize in rendering engineering and technical art.
             <br><br>
-            Outside of classes, I participate in game jams and group projects. I've founded and hold an eboard position for the student organization Queer in STEM (QSTEM), which was founded to help foster a welcoming community for queer STEM students on campus.
+            I participate in game jams and group projects as well as assisting other game developers in their own projects. I've founded the student organization Queer in STEM (QSTEM) alongside a close 
+            friend in mechanical engineering, which was founded to help foster a welcoming community for queer STEM students on campus.
             <br>
         </div>
 
         <div id="projects">
-            <div class="project" id="current">
+            <!-- <div class="project" id="current">
                 <h4>Current Projects</h4>
                 <div class="slides-container">
                     <div class="currentSlides fade">
                         <div class="text">PS5 Engine: All-Wheel Brawl</div>
-                        <video width="100%" controls>
-                            <source src="media/engine_preview.mp4" type="video/mp4">
-                        </video>
-                    </div>
 
-                    <div class="currentSlides fade">
-                        <div class="text">DirectX 12</div>
-                        <img src="media/dx_12.gif" style="width:100%" alt="Cube, torus, and sphere lit from one side with a pink light while moving and rotating">
                     </div>
 
                     <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -79,33 +73,39 @@
                     <span class="dot" onclick="currentSlide(1, 0)"></span>
                 </div>
                 <p>
-                    <div class="date">January 2024 - Current</div>
+                    <div class="date"></div>
+                </p>
+            </div> -->
+
+
+            <div class="project" id="ps5">
+                <a href="subpages/ps5.html"><h4>PS5 Engine & All-Wheel Brawl</h4></a>
+                <video width="100%" controls>
+                    <source src="media/engine_preview.mp4" type="video/mp4">
+                </video>
+                <p>
+
                 </p>
             </div>
-            <!-- NEO-VERSAILLES -->
-            <div class="project" id="neo-versailles">
-                <a href="subpages/neo-versailles.html"><h4>Painted World: Neo-Versailles</h4></a>
-                <div class="container">
-                    <div class="youtube-container">
-                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vB6H0r0U34E?si=i6EvIzk1qfqiINfJ&amp;controls=0" title="YouTube video player" 
-                        frameborder="0" allow="clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
-                    </div>
+
+            <div class="project" id="directX-12">
+                <a href="subpages/directX-12.html"><h4>DirectX 12</h4></a>
+                <div class="containter">
+                    <img src="media/dx_12.gif" alt="Cube, torus, and sphere lit from one side with a pink light while moving and rotating">
                 </div>
                 <p>
-                    <!--TODO: Rewrite this-->
                     <br>
-                    Neo-Versailles was designed by capstone students at the ArtCenter of California. As an RIT student, I was part of a team brought on to assist with the programming for the project.
-                    <br><br>
-                    Neo-Versailles is a First-Person Puzzle RPG Horror where the player explores a destroyed palace of Versailles through corrupted paintings. The player utilizes paint to explore the world and defend themself from the Demon of Despair.
+                    In Spring 2024, I continued the Game Graphics Programming sequence. The beginning of the course focused on DirectX 12 with us working within the API and going through the 
+                    same process we had in GGP1. 
+                    After the two projects had similar features, we moved on to the basics of ray tracing. As a class, we walked through both ray tracing as a console application and as a part of 
+                    DX 12.
                     <br><br>
                     <b>Skills:</b><br>
-                    C#, Unity Engine, Perforce, Jira, Confluence, Technical Documentation
+                    DirectX 12, C++
                     <br><br>
-                    <b>Team Size:</b> 30
-                    <br><br>
-                    The basis of the inventory code created by both myself and another RIT student, <a href="https://megan-schier.com/" target="_blank" rel="noopener"> Megan Schier</a>, is being utilized in this year's collaborations with ArtCenter.
+                    <b>Team Size:</b> Solo
                     <br>
-                    <div class="date">August 2022 - May 2023</div>
+                    <div class="date">January - May 2024</div>
                 </p>
             </div>
 
@@ -120,12 +120,15 @@
                     Using Professor Cascioli's code as a base, the final DirectX project can load obj files, create directional and point lights, use multiple different types of texture maps to create materials, 
                     and has an adjustable radial blur around the camera. 
                     <br><br>
+                    In Spring 2024, the end of GGP2 allowed us to choose to continue in DX 11 or DX 12. I ended up choosing to work in DX 11 as I was also working on a graphics engine for the <a href="#ps5">PS5</a> 
+                    in a production studio. 
+                    <br><br>
                     <b>Skills:</b><br>
                     DirectX 11, Dear ImGUI, C++
                     <br><br>
                     <b>Team Size:</b> Solo
                     <br>
-                    <div class="date">January - May 2023</div>
+                    <div class="date">January - May 2023, April - May 2024</div>
                 </p>
             </div>
 
@@ -155,6 +158,33 @@
                     The image above is another <i>Changeling</i> developer, Marcelo Faria, whose portfolio can be found <a href="https://www.marcelo-faria.com/" target="_blank" rel="noopener">here</a>.
                     <br>
                     <div class="date">May - August 2023</div>
+                </p>
+            </div>
+
+            <!-- NEO-VERSAILLES -->
+            <div class="project" id="neo-versailles">
+                <a href="subpages/neo-versailles.html"><h4>Painted World: Neo-Versailles</h4></a>
+                <div class="container">
+                    <div class="youtube-container">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vB6H0r0U34E?si=i6EvIzk1qfqiINfJ&amp;controls=0" title="YouTube video player" 
+                        frameborder="0" allow="clipboard-write; encrypted-media; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <p>
+                    <!--TODO: Rewrite this-->
+                    <br>
+                    Neo-Versailles was designed by capstone students at the ArtCenter of California. As an RIT student, I was part of a team brought on to assist with the programming for the project.
+                    <br><br>
+                    Neo-Versailles is a First-Person Puzzle RPG Horror where the player explores a destroyed palace of Versailles through corrupted paintings. The player utilizes paint to explore the world and defend themself from the Demon of Despair.
+                    <br><br>
+                    <b>Skills:</b><br>
+                    C#, Unity Engine, Perforce, Jira, Confluence, Technical Documentation
+                    <br><br>
+                    <b>Team Size:</b> 30
+                    <br><br>
+                    The basis of the inventory code created by both myself and another RIT student, <a href="https://megan-schier.com/" target="_blank" rel="noopener"> Megan Schier</a>, is being utilized in this year's collaborations with ArtCenter.
+                    <br>
+                    <div class="date">August 2022 - May 2023</div>
                 </p>
             </div>
 
