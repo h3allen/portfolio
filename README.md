@@ -1,7 +1,5 @@
 # portfolio-web
 Portfolio website - all the files
-https://people.rit.edu/hea4002/
-NOW ON GITHUB PAGES!
 
  ## Updates Needed
 - Update blurb (make it better, boring right now)
