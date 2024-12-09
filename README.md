@@ -19,3 +19,5 @@ NOW ON GITHUB PAGES!
 
  ## Images Used
  - GitHub, File, LinkedIn: FontAwesome
+
+ 3840 x 2160 for images 
