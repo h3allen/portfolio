@@ -195,6 +195,14 @@
     text-align: center;
 }
 
+.slides-container .info{
+    text-align: left;
+}
+
+.slides-container .description{
+    text-align: left;
+}
+
 
 @media screen and (min-width: 601px){
     .slides-container .project {
@@ -206,7 +214,6 @@
 
     .info {
         padding: 1rem;
-        text-align: left;
     }
     
     .description {

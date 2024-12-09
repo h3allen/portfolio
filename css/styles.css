@@ -3,7 +3,7 @@
   font-size: 18px;
 }
 body{
-  background-color: #88b394;
+  background-color: #393f65;
   color: rgb(235, 232, 240);    
   margin: 3rem;
 
@@ -39,10 +39,31 @@ header{
   padding-bottom: 0.4rem;
 }
 
-.navigation {
-  display: inline-grid;
-  grid-template-columns: "projects" "contact";
-  column-gap: 0.5rem;
+#navigation {
+  font-size: 20px;
+}
+
+#navigation a{
+  text-decoration: none;
+  color: rgb(235, 232, 240); 
+  font-size: 20px;
+}
+
+#navigation a:visited {
+  color: rgb(235, 232, 240); 
+}
+
+#navigation a:link {
+  color: rgb(235, 232, 240); 
+} 
+#navigation :focus{
+  color: #b893fc;
+} 
+#navigation a:hover{
+  color: rgb(208, 140, 240);
+}
+#navigation a:active{
+  color: #e8acf0;
 }
 
 #title{
@@ -82,7 +103,8 @@ header{
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-top: 1rem;
+  margin-top: 0.02rem;
+  z-index: 9999;
 }
 
 .dropdown-content {
