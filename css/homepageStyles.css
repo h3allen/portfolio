@@ -26,7 +26,10 @@
 }
 
 .project {
-    background-color: #1c2051e0;
+    background-image: linear-gradient(180deg, rgba(88, 204, 214, 0.5), rgba(63, 150, 181, 0.5));
+    border-style: solid;
+    border-width: 3px;
+    border: rgba(101, 168, 193, 0.395);
     border-radius: 4px;
 
     margin-left: -1rem;
@@ -38,19 +41,20 @@
     text-align: center;
 }
 
-
-
 #bio #current
 {
     text-align: center;
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 760px){
     .project {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        border-style: solid;
+        border-width: 3px;
     }
 
     #bio
@@ -75,6 +79,9 @@
         margin-right: 10rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        border-style: solid;
+        border-width: 3px;
     }
 
     #bio
@@ -204,7 +211,7 @@
 }
 
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 760px){
     .slides-container .project {
 
         display: grid;

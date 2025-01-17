@@ -3,7 +3,8 @@
   font-size: 18px;
 }
 body{
-  background-color: #393f65;
+
+
   color: rgb(235, 232, 240);    
   margin: 3rem;
 
@@ -333,6 +334,7 @@ tr:nth-of-type(2n)
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
 }
 
 /* Caption text */
