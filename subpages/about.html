@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../css/homepageStyles.css">
+        <link rel="stylesheet" href="../css/subpageStyles.css">
         <link rel="stylesheet" href="../css/styles.css">
         <script src="../js/functionality.js"></script>
         <script src="https://kit.fontawesome.com/4001d349c7.js" crossorigin="anonymous"></script>
@@ -19,13 +19,13 @@
         <title>Portfolio - Holly Allen</title>
     </head>
 
-    <body > <!--style="background-image: url('media/star_map.png');background-size: 130%;background-position: center;"-->
+    <body style="background-image: url('../media/tower_TEMP.png');background-size: cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;">
         <header>
 
             <div id="navigation">
                 <a href="../index.html">Holly Allen</a>
                 <div class="dropdown">
-                    <button onclick="dropDown()" class="dropbtn">Projects</button>
+                    <button onclick="dropDown('dropdownMenu')" class="dropbtn">Projects</button>
 
                     <div id="dropdownMenu" class="dropdown-content">
                         <a href="../index.html#ps5">PS5 Dev.</a>
@@ -38,10 +38,21 @@
                     </div>
                 </div>
                 <a href="about.html">About</a>
+                
                 <div id="contact">
-                    <a href="https://www.linkedin.com/in/holly-e-allen/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-2x" style="color: #ebe8f0;"></i></a>
-                    &nbsp;&nbsp;&nbsp;<a href="https://github.com/h3allen" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-2x" style="color: #ebe8f0;" ></i></a>
-                    &nbsp;&nbsp;&nbsp;<div class="tooltip"><a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0;"></i></a><span class="tooltip-text">Resume</span></div>
+                    <a href="https://www.linkedin.com/in/holly-e-allen/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-2x" style="color: #ebe8f0; size: 70%;"></i></a>
+                    &nbsp;&nbsp;&nbsp;<a href="https://github.com/h3allen" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-2x" style="color: #ebe8f0; size: 70%;" ></i></a>
+                    &nbsp;&nbsp;&nbsp;<div class="tooltip"><a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0; size: 70%;"></i></a><span class="tooltip-text">Resume</span></div>
+                </div>
+
+                <div class="dropdown" id="contactDropdown">
+                    <button onclick="dropDown('contactMenu')" class="dropbtn">Contact</button>
+
+                    <div id="contactMenu" class="dropdown-content">
+                        <a href="https://www.linkedin.com/in/holly-e-allen/" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="https://github.com/h3allen" target="_blank" rel="noopener">GitHub</a>
+                        <a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener">Resume</a><span class="tooltip-text">Resume</span>
+                    </div>
                 </div>
             </div>
         </header>

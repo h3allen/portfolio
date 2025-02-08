@@ -2,8 +2,8 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
 }
+
 body{
-  background-color: #393f65;
   color: rgb(235, 232, 240);    
   margin: 3rem;
 
@@ -18,15 +18,25 @@ body{
   font-family: 'Source Sans Pro, sans-serif';
 }
 
+@media screen and (min-width: 470px)
+{
+  #contactDropdown{
+    display: none;
+  }
+}
 @media screen and (max-width: 470px)
 {
+  #contact{
+    display: none;
+  }
+
   .subpageLink {
     padding-left: 20%;
   }
 }
 
 header{
-  background-color: #19234c;
+  background-color: #4991a5;;
 
   grid-area: header;
 
@@ -40,13 +50,28 @@ header{
 }
 
 #navigation {
-  font-size: 20px;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 470px)
+{
+  #navigation{
+    padding-left: 0.01rem;
+    padding-right: 0.01rem;
+    font-size: 0.01px;
+    text-align: center;
+  }
+
+  .dropdown-content
+  {
+    text-align: left;
+  }
 }
 
 #navigation a{
   text-decoration: none;
   color: rgb(235, 232, 240); 
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #navigation a:visited {
@@ -74,14 +99,14 @@ header{
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #19234c;
+  background-color: #4991a5;
   color: rgb(232, 229, 236);
 
   margin-left: 0rem;
   padding: 16px;
   padding-top: 5px;
 
-  font-size: 20px;
+  font-size: 18px;
 
   border: none;
   cursor: pointer;
@@ -93,10 +118,10 @@ header{
   grid-area: projects;
   grid-column-start: 0;
   grid-column-end: 1;
-  }
+}
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #19234c;
+  background-color: #42899d;
   color: rgb(232, 229, 236);
 }
 
@@ -111,14 +136,14 @@ header{
   display: none;
   position: absolute;
 
-  background-color: #1f2b5a;
+  background-color: #42899d;
   border: #6358a1;
 
   border-radius: 5px;
-  min-width: 160px;
+  min-width: 140px;
 
   margin-left: 0.5rem;
-  width: 10rem;
+  width: auto;
 }
 
 .dropdown-content a {
@@ -130,7 +155,7 @@ header{
 }
 
 .dropdown-content a:hover {
-  background-color: #1e2c5c;
+  background-color: #4991a5;
   border-radius: 3px;
 }
 .show {display:block;}
@@ -174,18 +199,18 @@ a{
   text-decoration: none;
 }
 a:link, a:visited{
-  color: #e0beff;
+  color: #f3b577;
 } 
 a:focus{
-  color: #b893fc;
+  color: #fcce93;
   text-decoration-line: underline;
 } 
 a:hover{
-  color: rgb(208, 140, 240);
+  color: rgb(244, 155, 87);
   text-decoration-line: underline;
 }
 a:active{
-  color: #e8acf0;
+  color: #f0d8ac;
 }
 
 h1, h2, h3, h4{
@@ -253,7 +278,7 @@ table-wrapper {
 
 table {
   width: 100%;
-  background-color: #1e2e6c;
+  background-color: #4991a5;
   border-collapse: collapse;
 }
 
@@ -263,12 +288,12 @@ th, td {
 }
 
 th {
-  background-color: #253b93;
+  background-color: #4991a5;
 }
 
 tr:nth-of-type(2n)
 {
-  background-color: #1e317d;
+  background-color: #2d747e;
 }
 
 @media (max-width: 650px) {
@@ -301,6 +326,7 @@ tr:nth-of-type(2n)
   position: relative;
   margin: auto;
   text-align: center;
+  z-index: 0;
 }
 
 /* Hide the images by default */
@@ -333,6 +359,7 @@ tr:nth-of-type(2n)
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
+  text-decoration: none;
 }
 
 /* Caption text */

@@ -1,8 +1,8 @@
-
+// Much of this comes from looking at GeeksForGeeks tutorials and examples or other resources on the basics and adapting them slightly to do what I need them to
 // Drop down menu
-function dropDown() 
+function dropDown(m) 
 {
-  document.getElementById("dropdownMenu").classList.toggle("show");
+  document.getElementById(m).classList.toggle("show");
 }
   
 // Close the dropdown menu if the user clicks outside of it
@@ -39,12 +39,6 @@ window.onload = function() {
 function currentSlide(n, no) {
   showSlides(slideIndex[no] = n);
 }
-
-let slideIndex = [0,0];
-/* Class the members of each slideshow group with different CSS classes */
-//let slideId = ["mySlides1", "mySlides2"]
-showSlides(0, 0);
-showSlides(0, 1);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
