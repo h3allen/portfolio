@@ -1,16 +1,38 @@
+#bio{
+    background-image: linear-gradient(180deg, rgba(88, 204, 214, 0.5), rgba(63, 150, 181, 0.5));
+    border-style: solid;
+    border-width: 3px;
+    border: rgba(101, 168, 193, 0.395);
+    border-radius: 4px;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 3px;
+
+    padding: 1rem;
+
+    text-align: left;
+    font-size: 18px;
+}
+
 #info h3{
     margin-top: -0.5rem;
 }
 
 #info {
-    background-color: #1c2051e0;
-    border-radius: 3px;
+    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.751),rgba(50, 133, 163, 0.75));
+    border-style: solid;
+    border-width: 3px;
+    border: rgba(101, 168, 193, 0.395);
+    border-radius: 4px;
 
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 
-    padding: 1rem;
-    padding-right: 1rem;
+    padding: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 0rem;
     height: auto;
 }
@@ -27,8 +49,8 @@
 @media screen and (min-width: 900px)
 {
     #info {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
         margin-top: 1.5rem;
     
         padding: 1rem;
