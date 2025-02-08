@@ -18,9 +18,18 @@ body{
   font-family: 'Source Sans Pro, sans-serif';
 }
 
-
+@media screen and (min-width: 470px)
+{
+  #contactDropdown{
+    display: none;
+  }
+}
 @media screen and (max-width: 470px)
 {
+  #contact{
+    display: none;
+  }
+
   .subpageLink {
     padding-left: 20%;
   }
@@ -42,6 +51,21 @@ header{
 
 #navigation {
   font-size: 18px;
+}
+
+@media screen and (max-width: 470px)
+{
+  #navigation{
+    padding-left: 0.01rem;
+    padding-right: 0.01rem;
+    font-size: 0.01px;
+    text-align: center;
+  }
+
+  .dropdown-content
+  {
+    text-align: left;
+  }
 }
 
 #navigation a{
@@ -94,7 +118,7 @@ header{
   grid-area: projects;
   grid-column-start: 0;
   grid-column-end: 1;
-  }
+}
 
 .dropbtn:hover, .dropbtn:focus {
   background-color: #42899d;
@@ -116,10 +140,10 @@ header{
   border: #6358a1;
 
   border-radius: 5px;
-  min-width: 160px;
+  min-width: 140px;
 
   margin-left: 0.5rem;
-  width: 10rem;
+  width: auto;
 }
 
 .dropdown-content a {
