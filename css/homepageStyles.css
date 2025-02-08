@@ -154,23 +154,6 @@
     height: 60%;
 }
 
-.project a:link, .project a:visited {
-    color: rgb(191, 218, 243);
-    text-decoration: none;
-} 
-.project a:focus{
-    color: rgb(235, 231, 241);
-    text-decoration-line: underline;
-} 
-.project a:hover{
-    color: rgb(113, 191, 255);
-    text-decoration-line: underline;
-}
-.project a:active{
-    color: rgb(176, 237, 255);
-    text-decoration: none;
-}
-
 .slides-container .project{
     border-radius: 4px;
     padding: 1rem;
