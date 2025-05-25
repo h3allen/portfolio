@@ -2,12 +2,10 @@
 Portfolio website - all the files
 
  ## Updates Needed
-- Chronically bad at spelling and need to fix all spelling issues present throughout the website (oops)
-- Fix sizing of project pages on mobile - make them take up the width of the screen maybe?
-- Update blurb (make it better, boring right now)
-- Partial rewrite of project tiles
 
-## Missing Content
+- Make navigation creation through JS so I'm not constantly updating every sub-page when something changes
+- Fix sizing of project pages on mobile - make them take up the width of the screen maybe?
+- Update About Me
 - DirectX 12 gif of final product
 - DX12 sub-page
 - PS5 sub-page
