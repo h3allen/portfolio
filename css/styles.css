@@ -16,12 +16,16 @@ body{
   "footer     footer      footer      footer";
 
   font-family: 'Source Sans Pro, sans-serif';
+  background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
 }
 
 @media screen and (min-width: 470px)
 {
   #contactDropdown{
     display: none;
+  }
+  body{
+    background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
   }
 }
 @media screen and (max-width: 470px)

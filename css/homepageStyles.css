@@ -9,7 +9,7 @@
 }
 
 .project {
-    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.751),rgba(50, 133, 163, 0.75));
+    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.90),rgba(50, 133, 163, 0.85));
     border-style: solid;
     border-width: 3px;
     border: rgba(101, 168, 193, 0.395);
@@ -31,8 +31,8 @@
 
 @media screen and (min-width: 760px){
     .project {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
@@ -58,8 +58,8 @@
 
 @media screen and (min-width: 1201px){
     .project {
-        margin-left: 10rem;
-        margin-right: 10rem;
+        margin-left: 12rem;
+        margin-right: 12rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
 
