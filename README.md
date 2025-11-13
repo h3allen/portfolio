@@ -16,4 +16,6 @@ Portfolio website - all the files
  ## Images Used
  - GitHub, File, LinkedIn: FontAwesome
 
- 3840 x 2160 for images 
+ https://aleclownes.com/2017/02/01/crt-display.html
+
+ 3840 x 2160 for images note: shrink 'em

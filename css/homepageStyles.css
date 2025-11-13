@@ -9,10 +9,10 @@
 }
 
 .project {
-    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.90),rgba(50, 133, 163, 0.85));
-    border-style: solid;
+    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.329),rgba(50, 133, 163, 0.644));
+    /* border-style: solid;
     border-width: 3px;
-    border: rgba(101, 168, 193, 0.395);
+    border: rgba(101, 168, 193, 0.395); */
     border-radius: 4px;
 
     margin-left: -1rem;
@@ -22,118 +22,55 @@
     padding: 1rem;
 
     text-align: center;
+
+    overflow: hidden;
+    position: relative;
 }
 
-#bio #current
-{
-    text-align: center;
+/* Scanlines? */
+.project:before,
+.project:after {
+    display: block;
+    pointer-events: none;
+    content: "";
+    position: absolute;
 }
 
-@media screen and (min-width: 760px){
-    .project {
-        margin-left: 5rem;
-        margin-right: 5rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        border-style: solid;
-        border-width: 3px;
-    }
-
-    #bio
-    {
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
-    }
-
-    .info {
-        padding: 1rem;
-        text-align: left;
-    }
-    
-    .description {
-        padding: 1rem;
-    }
-}
-
-@media screen and (min-width: 1201px){
-    .project {
-        margin-left: 12rem;
-        margin-right: 12rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-        border-style: solid;
-        border-width: 3px;
-    }
-
-    #bio
-    {
-        margin-left: 10rem;
-        margin-right: 10rem;
-    }
-
-    .info {
-        padding: 1rem;
-        text-align: left;
-    }
-    
-    .description {
-        padding: 1rem;
-    }
-}
-
-.project p, .project h4, .project img{
-    margin-top: -0.25rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-.date{
-    margin-top: 0.5rem;
-}
-
-#contact h3{
-    margin-top: -0.25rem;
-}
-
-#contact a:link, a:visited, a:focus {
-    color: rgb(229, 228, 236);
-}
-#contact a:hover, a:active{
-    color: rgb(189, 229, 253);
-}
-
-/* PROJECTS */
-#neo-versailles {
-    height: auto;
-} 
-
-#directX-11 {
-    height: auto;
-} 
-
-#changeling {
-    height: auto;
-} 
-
-
-#game-jam {
-    height: auto;
-} 
-
-#projects h1{
-    margin-top: -0.25rem;
-}
-
-#projects img{
+.project:before {
     width: 100%;
+    height: 2px;
+    z-index: 1;
+    background: rgba(0,0,0,0.3);
+    opacity: 1;
+    animation: scanline 6s linear infinite;
 }
-@media screen and (min-width: 758px){
-    #projects img{
-        width: 100%;
+.project:after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(0, 0, 0, 0.3) 51%
+    );
+    background-size: 100% 4px;
+    animation: scanlines 10s steps(60) infinite;
+}
+
+/* @keyframes scanline {
+    0% {
+        transform: translate3d(0, 200000%, 0);
+    }
+} */
+@keyframes scanlines {
+    0% {
+        background-position: 0 50%;
     }
 }
 
+/* YOUTUBE */
 #projects .youtube-container {
     position: relative;
     width: 100%;
@@ -146,6 +83,10 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
+    border: #0a4c4c00;
+    border-style: solid;
+    border-width: 3px;
 }
 
 #projects video {
@@ -154,6 +95,7 @@
     height: 60%;
 }
 
+/* SLIDES */
 .slides-container .project{
     border-radius: 4px;
     padding: 1rem;
@@ -162,23 +104,103 @@
 
 .slides-container .info{
     text-align: left;
+    z-index: 2;
 }
 
 .slides-container .description{
     text-align: left;
+    z-index: 2;
 }
 
-@media screen and (min-width: 760px){
-    .slides-container .project {
+/* PROJECTS */
+#current
+{
+    text-align: center;
+}
+
+#neo-versailles, #directx-11, #changeling {
+    height: auto;
+} 
+
+#projects h1{
+    margin-top: -0.25rem;
+    z-index: 2;
+}
+
+#projects img{
+    width: 100%;
+    z-index: 2;
+}
+
+.project p, .project h4, .project img{
+    margin-top: -0.25rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.date{
+    margin-top: 0.5rem;
+    z-index: 2;
+}
+
+.info {
+    z-index: 2;
+}
+
+.description {
+    z-index: 2;
+}
+ 
+
+/* 1008 (large) px & above */
+@media screen and (min-width: 1008px){
+    .project {
+        margin-left: 5rem;
+        margin-right: 5rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        /* border-style: solid; */
+        border-width: 3px;
+        z-index: 1;
     }
 
     .info {
         padding: 1rem;
+        text-align: left;
+        z-index: 2;
     }
     
     .description {
         padding: 1rem;
+        z-index: 2;
+    }
+
+    .slides-container .project {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
+
+/* 
+@media screen and (min-width: 1201px){
+    .project {
+        margin-left: 12rem;
+        margin-right: 12rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        border-width: 3px;
+    }
+
+    .info {
+        padding: 1rem;
+        text-align: left;
+        z-index: 2;
+    }
+    
+    .description {
+        padding: 1rem;
+        z-index: 2;
+    }
+} */

@@ -16,7 +16,8 @@ body{
   "footer     footer      footer      footer";
 
   font-family: 'Source Sans Pro, sans-serif';
-  background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+  background-color: #15161a;
+  background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
 }
 
 @media screen and (min-width: 470px)
@@ -25,7 +26,8 @@ body{
     display: none;
   }
   body{
-    background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+    background-color: #15161a;
+    background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
   }
 }
 @media screen and (max-width: 470px)
@@ -116,7 +118,7 @@ header{
   cursor: pointer;
   border-radius: 3px;
 
-  width: 6rem;
+  width: 5rem;
   height: 2rem;
 
   grid-area: projects;
@@ -241,8 +243,8 @@ h4{
 }
 
 img{
-  border-radius: 3px;
-  border: #22305c;
+  border-radius: 10px;
+  border: #0a4c4c00;
   border-style: solid;
   border-width: 3px;
 }
@@ -261,6 +263,15 @@ header img{
   text-align: right;
   margin-top: -2rem;
   padding-right: 1rem;
+}
+
+/* CONTACT */ 
+#contact h3{
+  margin-top: -0.25rem;
+}
+
+#contact a:hover, a:active{
+  color: rgb(189, 229, 253);
 }
 
 #contact a:visited, #contact a:link{

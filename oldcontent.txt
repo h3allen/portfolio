@@ -1,0 +1,254 @@
+<div class="currentSlides fade">
+    <div class="project" id="current">
+        <div class="info">
+            <h4>Current Projects</h4>
+            <div class="text">
+                Volunteer Programmer & Scrum Master
+            </div>
+            <img src="media/under_construction_unreal.png" style="width:100%" alt="MS Paint drawing of a pillbug wearing a hardhat in front of a computer screen displaying Unreal Engine 5">
+
+            <b>Skills: </b>C++, Unreal Engine, Scrum, Python
+            <br>
+            <b>Team Size: </b> 12
+        </div>
+        <div class="description">
+            <br><br>
+            In March 2025, I started volunteering at an indie startup on a project in the early stages of development. I also work as the team's 
+            Scrum Master.
+            <br><br>
+            Currently I've done work both in-engine as a programmer and in project management software. Recently I've taken back up Python to attempt to 
+            connect our task tracking software to a spreadsheet for easier use on the production end.
+            <br><br>
+            The project is currently in its prototype stage, where a lot of key features are being designed and implemented for initial testing.
+        </div>
+    </div>
+</div>
+<div class="currentSlides fade">
+    <div class="project" id="current">
+        <div class="info">
+            <h4>Current Projects</h4>
+            <div class="text">Terminal Glue</div>
+            <img src="media/under_construction_unity.png" style="width:100%" alt="MS Paint drawing of a pillbug wearing a hardhat in front of a computer screen displaying Unity 6">
+            <b>Skills: </b>C#, Unity Engine
+            <br>
+            <b>Team Size: </b> 4
+        </div>
+        <div class="description">
+            <br><br>
+            Terminal Glue is the temporary name for a project I'm currently working on with a handful of friends.
+            The goal of the project was to look back on past games we'd worked on together, see what worked and what didn't, 
+            and tackle them again with our present skill sets. 
+            <br><br>
+            With many of our student projects, we were learning new techniques as we were going, with a limited time to get the project 
+            done. Now, our limit is more on the time we have to dedicate to the project each week, which provides a new set of circumstances 
+            and challenges.
+            <br><br>
+            Currently, the project is early in development, but my next goal is to take a look at particle effects to create the desired effect for our enemy!
+        </div>
+    </div>
+</div>
+
+<!-- GAME JAMS -->
+<div class="slides-container">
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Hat Bird</div>
+                <img src="media/hatbird.png" style="width:100%" alt="Bird behind table with three items on it: a knife, bottlecaps, and a pen">
+                <b>Skills:</b> C#, Unity Engine, 2D Art
+                <br>
+                <b>Team Size:</b> 3
+                <div class="date">October 2021</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>RITGDC Halloween Jam 2021
+                    <br><br>
+                    Hat Bird was my first ever game jam project as a college student. I was a first semester sophomore at the time 
+                    and had just taken my first official Unity class.
+                    <br><br>
+                    The plan was to keep the project small. No one in the group had really done a jam before and had no idea how fast we could 
+                    finish a full game loop in a project. My task was to finish as many art assets as I possibly could in the short 2-day jam. 
+                    That ended up being a variety of objects, hats, the character, and the scene assets. 
+                    <br><br>
+                    <a href="https://ashyn.itch.io/hat-bird" target="_blank" rel="noopener"> itch page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Fish</div>
+                <img src="media/fish.png" style="width:100%" alt="First-person image of a fishing rod over the water next to a monster">
+                <b>Skills:</b> C#, Unity Engine, Shader Graph
+                <br>
+                <b>Team Size:</b> 4
+                <div class="date">June 2022</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>Tomato Jam
+                    <br><br>
+                    Fish was my first project with people outside of RIT. It gave us a broader range of skillsets. It was 
+                    also my first jam working with a dedicated artist, which allowed me to focus on what I was more interested in.
+                    <br><br>
+                    The Tomato Jam's main focus was to allow its participants to learn something new. I took full advantage of this and 
+                    started looking at shaders.
+                    <br><br>
+                    <a href="https://greembeems.itch.io/creature-fishing" target="_blank" rel="noopener"> itch page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Decaying Orbit</div>
+                <img src="media/decaying-orbit.png" style="width:100%" alt="Pink paper cutout of a person next to a torn cutout of a person sitting in a hallway">
+                <b>Skills:</b> C#, Unity Engine
+                <br>
+                <b>Team Size:</b> 4
+                <div class="date">October 2022</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>RITGDC Halloween Jam 2022
+                    <br><br>
+                    Decaying Orbit, on my end, was a failure in time management. While we had a decent team size, some of the group had 
+                    no experience with Unity, and almost all had only a small amount of time they could dedicate to the project.
+                    <br><br>
+                    Our biggest issue we ran into was a lack of testing of everyone's code in conjunction, which meant nothing really worked.
+                    The player character was also physics based, which meant you could tip over and get stuck forever.
+                    <br><br>
+                    I am very pleased that the dialogue functions, but it is certainly not performant. 
+                    <br><br>
+                    <a href="https://greembeems.itch.io/decaying-orbit" target="_blank" rel="noopener"> itch page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Fish-ticuffs</div>
+                <img src="media/fish-ticuffs.png" style="width:100%" alt="Gameplay image of a squid fighting a mantis shrimp with boxing glove projectiles">
+                <b>Skills:</b> C#, Unity Engine, 2D Art
+                <br>
+                <b>Team Size:</b> 4
+                <div class="date">June 2023</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>Banana Jam
+                    <br><br>
+                    Fish-ticuffs was a game I worked on while working on <i>Changeling</i>. This limited both the time and energy I had to work 
+                    on the game, but the end result is a bare-bones function of the original plan. 
+                    <br><br>
+                    Banana Jam typically provides limitations, with the first jam, we couldn't use any text. I ended up drawing all UI by hand, but 
+                    due to some time constraints, not all of it made it in.
+                    <br><br>
+                    <a href="https://greembeems.itch.io/fish-ticuffs" target="_blank" rel="noopener"> itch page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Snowbringer</div>
+                <img src="media/snowbringer.png" style="width:100%" alt="Debug image of a snowy scene with scattered rocks and trees">
+                <b>Skills:</b> C#, Unity Engine, 2D Art
+                <br>
+                <b>Team Size:</b> 11
+                <div class="date">Fall 2023</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>Semester-long Hackajam
+                    <br><br>
+                    The Semester-long Hackajam was an excellent opportunity to work on a larger project. The largest blocker? Time.
+                    Most of our team were seniors, with some dual-enrolled in the masters program. 
+                    <br><br>
+                    While we made good initial progress, we ended up slowing to a halt after the semester fully kicked off. With a lack 
+                    of time and energy to work, the project faded to nothingness while academic projects took priority.
+                    <br><br>
+                    <a href="https://hea4002.wixsite.com/snowbringer" target="_blank" rel="noopener"> Development blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Desert Town</div>
+                <img src="media/character_banana_2.png" style="width:100%" alt="Sprite sheet of pixel art character in grey hood with green face and scarf">
+                <b>Skills:</b> 2D Art
+                <br>
+                <b>Team Size:</b> 2
+                <div class="date">January 2024</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>Banana Jam 2
+                    <br><br>
+                    My only goal working on this project was to create art assets for a bare-bones version of the game idea. 
+                    With a limited palette of 4 colors, most of my time was spent making the assets look good whilst still being distinct.
+                    The game was never finished during the jam, but the documents and plans for it may be revisited in the future.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slides fade">
+        <div class="project" id="game-jam">
+            <div class="info">
+                <h4>Game Jams</h4>
+                <div class="text">Banana Jam 3</div>
+                <img src="media/banana_jam_3.png" style="width:100%" alt="Low-resolution room with a doorway, plant, shelf with books, and sofa. The top half of the room is in full color while the bottom half has very low saturation, almost black and white">
+                <b>Skills:</b> GameMaker Studio, GLSL, 2D Art
+                <br>
+                <b>Team Size:</b> 4
+                <div class="date">September - October 2024</div>
+            </div>
+            <div class="description">
+                <div>
+                    <br><br>
+                    <b>Jam: </b>Banana Jam 3
+                    <br><br>
+                    For Banana Jam 3, the team decided to use GameMaker, something only one of us had ever worked in before. Being more bare-bones than Unity or Unreal, it 
+                    provided an opportunity to learn something entirely new. 
+                    <br><br>
+                    After the design process, I worked on making visual assets that could work for multiple scenes. Some of this was achieved using shaders, allowing us to 
+                    change the colors of objects to provide a greater variety. I then looked towards creating a simple post-process to achieve the stark difference the 
+                    team desired for the players home versus the community they worked in.
+                    <br><br> 
+                    Sadly, due to unforeseen circumstances, the game was never finished.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="slides-container">
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+    </div>
+</div>
