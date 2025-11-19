@@ -141,6 +141,10 @@
 .description {
     z-index: 2;
 }
+
+#graphics h3, #currentProjects h3, #technicalArt h3 {
+    margin-left: -2.75rem;
+}
  
 
 /* 1008 (large) px & above */
@@ -173,6 +177,9 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #graphics h3, #currentProjects h3, #technicalArt h3 {
+        margin-left: 6rem;
+    }
     /* @keyframes scanline {
     0% {
         transform: translate3d(0, 200000%, 0);
