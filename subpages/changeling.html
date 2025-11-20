@@ -22,10 +22,9 @@
     </head>
     <body>
         <header>
-
             <div id="navigation">
                 <a href="../index.html">Portfolio</a>
-                <div class="dropdown">
+                <div class="dropdown" id="dropdownProjects">
                     <button onclick="dropDown('dropdownMenu')" class="dropbtn">Projects</button>
 
                     <div id="dropdownMenu" class="dropdown-content">
@@ -40,9 +39,9 @@
                 <a href="about.html">About</a>
                 
                 <div id="contact">
-                    <a href="https://www.linkedin.com/in/holly-e-allen/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-2x" style="color: #ebe8f0; size: 70%;"></i></a>
-                    &nbsp;&nbsp;&nbsp;<a href="https://github.com/h3allen" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-2x" style="color: #ebe8f0; size: 70%;" ></i></a>
-                    &nbsp;&nbsp;&nbsp;<div class="tooltip"><a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0; size: 70%;"></i></a><span class="tooltip-text">Resume</span></div>
+                    <a href="https://www.linkedin.com/in/holly-e-allen/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin fa-2x" style="color: #ebe8f0; size: 60%;"></i></a>
+                    &nbsp;&nbsp;&nbsp;<a href="https://github.com/h3allen" target="_blank" rel="noopener"><i class="fa-brands fa-github fa-2x" style="color: #ebe8f0; size: 60%;" ></i></a>
+                    &nbsp;&nbsp;&nbsp;<div class="tooltip"><a href="media/HAllen_Resume.pdf" target="_blank" rel="noopener"><i class="fa-solid fa-file fa-2x" style="color: #ebe8f0; size: 60%;"></i></a><span class="tooltip-text">Resume</span></div>
                 </div>
 
                 <div class="dropdown" id="contactDropdown">
@@ -295,52 +294,52 @@
               the fae invade the player character's safe space.
               <br><br> 
               <img src="../media/changeling_lights.png" alt="Toddler island in Mind Palace covered in grass, a dinosaur toy, and a tree with pink lights and blue shadows">
-              <br><br>
+              <br>
          </div>
          <script>
             function AddTableARIA() {
                 try {
                     var allTables = document.querySelectorAll('table');
-                for (var i = 0; i < allTables.length; i++) {
-                    allTables[i].setAttribute('role','table');
-                }
-                
-                var allCaptions = document.querySelectorAll('caption');
-                
-                for (var i = 0; i < allCaptions.length; i++) {
-                    allCaptions[i].setAttribute('role','caption');
-                }
+                    for (var i = 0; i < allTables.length; i++) {
+                        allTables[i].setAttribute('role','table');
+                    }
+                    
+                    var allCaptions = document.querySelectorAll('caption');
+                    
+                    for (var i = 0; i < allCaptions.length; i++) {
+                        allCaptions[i].setAttribute('role','caption');
+                    }
 
-                var allRowGroups = document.querySelectorAll('thead, tbody, tfoot');
-                
-                for (var i = 0; i < allRowGroups.length; i++) {
-                    allRowGroups[i].setAttribute('role','rowgroup');
-                }
+                    var allRowGroups = document.querySelectorAll('thead, tbody, tfoot');
+                    
+                    for (var i = 0; i < allRowGroups.length; i++) {
+                        allRowGroups[i].setAttribute('role','rowgroup');
+                    }
 
-                var allRows = document.querySelectorAll('tr');
+                    var allRows = document.querySelectorAll('tr');
 
-                for (var i = 0; i < allRows.length; i++) {
-                    allRows[i].setAttribute('role','row');
-                }
+                    for (var i = 0; i < allRows.length; i++) {
+                        allRows[i].setAttribute('role','row');
+                    }
 
-                var allCells = document.querySelectorAll('td');
+                    var allCells = document.querySelectorAll('td');
 
-                for (var i = 0; i < allCells.length; i++) {
-                    allCells[i].setAttribute('role','cell');
-                }
+                    for (var i = 0; i < allCells.length; i++) {
+                        allCells[i].setAttribute('role','cell');
+                    }
 
-                var allHeaders = document.querySelectorAll('th');
+                    var allHeaders = document.querySelectorAll('th');
 
-                for (var i = 0; i < allHeaders.length; i++) {
-                    allHeaders[i].setAttribute('role','columnheader');
-                }
+                    for (var i = 0; i < allHeaders.length; i++) {
+                        allHeaders[i].setAttribute('role','columnheader');
+                    }
 
-                // this accounts for scoped row headers
-                var allRowHeaders = document.querySelectorAll('th[scope=row]');
+                    // this accounts for scoped row headers
+                    var allRowHeaders = document.querySelectorAll('th[scope=row]');
 
-                for (var i = 0; i < allRowHeaders.length; i++) {
-                    allRowHeaders[i].setAttribute('role','rowheader');
-                }
+                    for (var i = 0; i < allRowHeaders.length; i++) {
+                        allRowHeaders[i].setAttribute('role','rowheader');
+                    }
                 } 
                 catch (e) {
                     console.log("AddTableARIA(): " + e);

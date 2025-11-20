@@ -16,14 +16,11 @@
 /* MEDIUM TO LARGE SCREENS */
 @media screen and (min-width: 641px)
 {
-  *{
-    font-size: 20px;
-  }
-
   #contactDropdown{
     display: none;
   }
   body{
+    font-size: 20px;
     background-color: #15161a;
     background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
   }
@@ -60,10 +57,6 @@ header{
   padding: 0.5rem;
   padding-bottom: 0.4rem;
   font-size: 18px;
-}
-
-#navigation {
-  
 }
 
 @media screen and (max-width: 641px)
@@ -111,19 +104,15 @@ header{
   color: rgb(232, 229, 236);
 
   margin: 0.25rem;
-  padding: 16px;
-  padding-top: 5px;
+  padding: 6px;
+  font-size: 20px;
 
   border: none;
   cursor: pointer;
   border-radius: 3px;
 
-  width: 5rem;
-  height: 2rem;
-
-  grid-area: projects;
-  grid-column-start: 0;
-  grid-column-end: 1;
+  width: auto;
+  height: auto;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -134,8 +123,9 @@ header{
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-top: 0.02rem;
   z-index: 9999;
+  width: auto;
+  height: auto;
 }
 
 .dropdown-content {
@@ -161,7 +151,7 @@ header{
 }
 
 .dropdown-content a:hover {
-  background-color: #4991a5;
+  background-color: #164552;
   border-radius: 3px;
 }
 .show {display:block;}
@@ -263,9 +253,8 @@ img{
 
 /* CONTACT */ 
 #contact {
-  grid-area: contact;
   text-align: right;
-  margin-top: -2rem;
+  margin-top: -2.3rem;
   padding-right: 1rem;
 }
 
@@ -279,53 +268,6 @@ img{
 
 #contact a:visited, #contact a:link{
   color: rgb(232, 229, 236);
-}
-
-/* TABLE */
-table-wrapper {
-  width: min(900px, 100% - 3rem);
-  margin-inline: auto;
-}
-
-table {
-  width: 100%;
-  background-color: #4991a5;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 1rem;
-  text-align: left;
-}
-
-th {
-  background-color: #4991a5;
-}
-
-tr:nth-of-type(2n)
-{
-  background-color: #2d747e;
-}
-
-@media (max-width: 650px) {
-
-  th {
-    display: none;
-  }
-  td {
-    display: grid;
-    grid-template-columns: 15ch auto;
-  }
-
-  th, td {
-    padding: 0.5rem;
-  }
-
-  td::before {
-    content: attr(data-cell) ": ";
-    font-weight: 700;
-    text-transform: capitalize;
-  }
 }
 
 /* SLIDES */
@@ -363,12 +305,14 @@ tr:nth-of-type(2n)
 }
 @media screen and (max-width: 640px)
 {
+  #navigation {
+    font-size: 22px;
+  }
   #navigation a{
-    font-size: 18px;
     margin-right: 1rem;
   }
   .dropbtn {
-    font-size: 18px;
+    font-size: 22px;
   }
   #dropdownProjects
   {

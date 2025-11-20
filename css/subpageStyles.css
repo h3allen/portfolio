@@ -1,57 +1,26 @@
-#bio{
-    background-image: linear-gradient(180deg, rgba(88, 204, 214, 0.5), rgba(63, 150, 181, 0.5));
-    border-style: solid;
-    border-width: 3px;
-    border: rgba(101, 168, 193, 0.395);
-    border-radius: 4px;
-
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-    border-radius: 3px;
-
-    padding: 1rem;
-
-    text-align: left;
-    font-size: 18px;
-}
-
 #info h3{
     margin-top: -0.5rem;
 }
 
-#info, #bio {
-    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.90),rgba(50, 133, 163, 0.85));
-    border-style: solid;
-    border-width: 3px;
-    border: rgba(101, 168, 193, 0.395);
+#info {
+    background-image: linear-gradient(180deg, rgba(78, 187, 197, 0.329),rgba(50, 133, 163, 0.644));
     border-radius: 4px;
-
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-top: 5rem;
 
     padding: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0rem;
     height: auto;
 }
 
-@media screen and (min-width: 547px)
+@media screen and (min-width: 641px)
 {
-    #info, #bio {
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
+
 }
 
-
-@media screen and (min-width: 900px)
+@media screen and (min-width: 1008px)
 {
-    #info, #bio {
-        margin-left: 13rem;
-        margin-right: 13rem;
-        margin-top: 1.5rem;
+    #info {
+        margin-left: 8rem;
+        margin-right: 8rem;
     
         padding: 1rem;
         padding-right: 4.5rem;
@@ -76,3 +45,49 @@
 img {
     width: 100%;
 }
+
+/* TABLE */
+table-wrapper {
+  margin-inline: auto;
+}
+
+table {
+  background-color: #215765;
+  font-size: 24px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #215765;
+}
+
+tr:nth-of-type(2n)
+{
+  background-color: #113e44;
+}
+
+/* @media (max-width: 650px) {
+
+  th {
+    display: none;
+  }
+  td {
+    display: grid;
+    grid-template-columns: 15ch auto;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  td::before {
+    content: attr(data-cell) ": ";
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+} */
