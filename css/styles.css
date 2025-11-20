@@ -1,7 +1,6 @@
 /* SMALL SCREEN */
 *{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 26px;
 }
 @media screen and (max-width: 641px)
 {
@@ -41,10 +40,10 @@ body{
   "projects   projects    projects        projects"
   "projects   projects    projects        projects"
   "footer     footer      footer      footer";
-
   font-family: 'Source Sans Pro, sans-serif';
   background-color: #15161a;
   background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+  font-size: 26px;
 }
 
 /* NAVIGATION */
@@ -60,10 +59,11 @@ header{
 
   padding: 0.5rem;
   padding-bottom: 0.4rem;
+  font-size: 18px;
 }
 
 #navigation {
-  font-size: 18px;
+  
 }
 
 @media screen and (max-width: 641px)
