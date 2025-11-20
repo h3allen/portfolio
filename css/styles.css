@@ -41,6 +41,7 @@ body{
   background-color: #15161a;
   background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
   font-size: 26px;
+  z-index: 2;
 }
 
 /* NAVIGATION */
@@ -105,7 +106,7 @@ header{
 
   margin: 0.25rem;
   padding: 6px;
-  font-size: 20px;
+  font-size: 18px;
 
   border: none;
   cursor: pointer;
@@ -195,6 +196,7 @@ header{
 /* STANDARD LINKS */
 a{
   text-decoration: none;
+  z-index: 2;
 }
 a:link, a:visited{
   color: #f3b577;
@@ -216,6 +218,7 @@ h1, h2, h3, h4{
   font-family: 'Rowdies', cursive;
   font-weight: normal;
   font-size: 27px;
+  z-index: 2;
 }
 
 h2{
