@@ -49,6 +49,9 @@
     background-size: 100% 4px;
     /* animation: scanlines 10s steps(60) infinite; */
 }
+#description {
+    z-index: 2;
+}
 
 p {
     z-index: 2;
