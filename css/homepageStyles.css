@@ -146,14 +146,28 @@
 
 /* 1008 (large) px & above */
 @media screen and (min-width: 1008px){
+    #projects {
+        display: grid;
+    }
     .project {
-        margin-left: 5rem;
-        margin-right: 5rem;
         grid-template-columns: 1fr 1fr;
 
         /* border-style: solid; */
         border-width: 3px;
         z-index: 3;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 62rem;
+    }
+
+    #graphics, #technicalArt, #currentProjects {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #graphics h3, #technicalArt h3, #currentProjects h3 {
+        padding-top: 4rem;
+        font-size: 30px;
     }
 
     .info {
