@@ -1,6 +1,3 @@
-# portfolio-web
-Portfolio website - all the files
-
  ## Updates Needed
 
 - Make navigation creation through JS so I'm not constantly updating every sub-page when something changes
@@ -11,9 +8,12 @@ Portfolio website - all the files
 - PS5 sub-page
 - Current engine project w/ Silas
 
- ### Website Architecture
-
  ## Images Used
  - GitHub, File, LinkedIn: FontAwesome
 
- 3840 x 2160 for images 
+ https://aleclownes.com/2017/02/01/crt-display.html
+
+ 3840 x 2160 for images note: shrink 'em
+
+ ## Screen size notes:
+ - Smallest: 320px

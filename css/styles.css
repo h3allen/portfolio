@@ -1,6 +1,29 @@
+/* SMALL SCREEN */
 *{
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+}
+@media screen and (max-width: 641px)
+{
+  #contact{
+    display: none;
+  }
+
+  .subpageLink {
+    padding-left: 20%;
+  }
+}
+
+/* MEDIUM TO LARGE SCREENS */
+@media screen and (min-width: 641px)
+{
+  #contactDropdown{
+    display: none;
+  }
+  body{
+    font-size: 20px;
+    background-color: #15161a;
+    background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+  }
 }
 
 body{
@@ -14,33 +37,16 @@ body{
   "projects   projects    projects        projects"
   "projects   projects    projects        projects"
   "footer     footer      footer      footer";
-
   font-family: 'Source Sans Pro, sans-serif';
-  background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+  background-color: #15161a;
+  background-image: url('../media/website_Background.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
+  font-size: 26px;
+  z-index: 2;
 }
 
-@media screen and (min-width: 470px)
-{
-  #contactDropdown{
-    display: none;
-  }
-  body{
-    background-image: url('../media/tower_TEMP.png');background-size:cover;background-position: center; background-attachment: fixed; background-repeat: repeat-y;
-  }
-}
-@media screen and (max-width: 470px)
-{
-  #contact{
-    display: none;
-  }
-
-  .subpageLink {
-    padding-left: 20%;
-  }
-}
-
+/* NAVIGATION */
 header{
-  background-color: #4991a5;;
+  background-color: #19414b;
 
   grid-area: header;
 
@@ -51,19 +57,14 @@ header{
 
   padding: 0.5rem;
   padding-bottom: 0.4rem;
-}
-
-#navigation {
   font-size: 18px;
 }
 
-@media screen and (max-width: 470px)
+@media screen and (max-width: 641px)
 {
   #navigation{
-    padding-left: 0.01rem;
-    padding-right: 0.01rem;
-    font-size: 0.01px;
     text-align: center;
+    font-size: 20px;
   }
 
   .dropdown-content
@@ -75,7 +76,6 @@ header{
 #navigation a{
   text-decoration: none;
   color: rgb(235, 232, 240); 
-  font-size: 18px;
 }
 
 #navigation a:visited {
@@ -97,50 +97,43 @@ header{
 
 #title{
   margin-left: 0.5rem;
-  margin-bottom: -1rem;
-  margin-top: -1rem;
 }
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4991a5;
+  background-color: #19414b;
   color: rgb(232, 229, 236);
 
-  margin-left: 0rem;
-  padding: 16px;
-  padding-top: 5px;
-
+  margin: 0.25rem;
+  padding: 6px;
   font-size: 18px;
 
   border: none;
   cursor: pointer;
   border-radius: 3px;
 
-  width: 6rem;
-  height: 2rem;
-
-  grid-area: projects;
-  grid-column-start: 0;
-  grid-column-end: 1;
+  width: auto;
+  height: auto;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #42899d;
+  background-color: #12353d;
   color: rgb(232, 229, 236);
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
-  margin-top: 0.02rem;
   z-index: 9999;
+  width: auto;
+  height: auto;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
 
-  background-color: #42899d;
+  background-color: #12353d;
   border: #6358a1;
 
   border-radius: 5px;
@@ -159,11 +152,12 @@ header{
 }
 
 .dropdown-content a:hover {
-  background-color: #4991a5;
+  background-color: #164552;
   border-radius: 3px;
 }
 .show {display:block;}
 
+/* TOOLTIPS */
 .tooltip-text {
   visibility: hidden;
   position: absolute;
@@ -187,6 +181,7 @@ header{
   text-align: center;
 }
 
+/* SUBPAGGE LINKS */
 .subpageLink a{
   text-decoration: none;
   font-size: 20px;
@@ -198,9 +193,10 @@ header{
   text-decoration-line: underline;
 }
 
-/* Standard Links */
+/* STANDARD LINKS */
 a{
   text-decoration: none;
+  z-index: 2;
 }
 a:link, a:visited{
   color: #f3b577;
@@ -217,54 +213,20 @@ a:active{
   color: #f0d8ac;
 }
 
+/* HEADERS */
 h1, h2, h3, h4{
   font-family: 'Rowdies', cursive;
   font-weight: normal;
   font-size: 27px;
+  z-index: 2;
 }
 
 h2{
   margin-top: 4rem;
 }
 
-h4{
-  font-size: 20px;
-}
-
-#bio h4{
-  margin-bottom: 0.25rem;
-}
-
-#bio a{
-  font-size: 20px;
-  text-decoration: none;
-}
-
-img{
-  border-radius: 3px;
-  border: #22305c;
-  border-style: solid;
-  border-width: 3px;
-}
-
-header img{
-  float: right;
-  width: 8rem;
-
-  margin-bottom: -.25rem;
-  margin-right: -.5rem;
-  border-radius: 0px;
-  border: none;
-}
-#contact {
-  grid-area: contact;
-  text-align: right;
-  margin-top: -2rem;
-  padding-right: 1rem;
-}
-
-#contact a:visited, #contact a:link{
-  color: rgb(232, 229, 236);
+.info h4 {
+  font-size: 24px;
 }
 
 h1 a {
@@ -274,54 +236,44 @@ h1 a {
   text-decoration: none;
 }
 
-/* Table */
-table-wrapper {
-  width: min(900px, 100% - 3rem);
-  margin-inline: auto;
+/* BIO HEADER */
+#bio h4{
+  margin-bottom: 0.25rem;
 }
 
-table {
-  width: 100%;
-  background-color: #4991a5;
-  border-collapse: collapse;
+#bio a{
+  font-size: 20px;
+  text-decoration: none;
 }
 
-th, td {
-  padding: 1rem;
-  text-align: left;
+/* IMAGE */
+img{
+  border-radius: 10px;
+  border: #0a4c4c00;
+  border-style: solid;
+  border-width: 3px;
 }
 
-th {
-  background-color: #4991a5;
+/* CONTACT */ 
+#contact {
+  text-align: right;
+  margin-top: -2.3rem;
+  padding-right: 1rem;
 }
 
-tr:nth-of-type(2n)
-{
-  background-color: #2d747e;
+#contact h3{
+  margin-top: -0.25rem;
 }
 
-@media (max-width: 650px) {
-
-  th {
-    display: none;
-  }
-  td {
-    display: grid;
-    grid-template-columns: 15ch auto;
-  }
-
-  th, td {
-    padding: 0.5rem;
-  }
-
-  td::before {
-    content: attr(data-cell) ": ";
-    font-weight: 700;
-    text-transform: capitalize;
-  }
+#contact a:hover, a:active{
+  color: rgb(189, 229, 253);
 }
 
-/* Slides */
+#contact a:visited, #contact a:link{
+  color: rgb(232, 229, 236);
+}
+
+/* SLIDES */
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -339,19 +291,39 @@ tr:nth-of-type(2n)
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next { /* Breaking tiny screen sizes */
   cursor: pointer;
   position: relative;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 60px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 3;
+}
+@media screen and (max-width: 640px)
+{
+  #navigation {
+    font-size: 22px;
+  }
+  #navigation a{
+    margin-right: 1rem;
+  }
+  .dropbtn {
+    font-size: 22px;
+  }
+  #dropdownProjects
+  {
+    display:none;
+  }
+  .prev, .next {
+    padding: 20px;
+  }
 }
 
 /* Position the "next button" to the right */
@@ -362,17 +334,14 @@ tr:nth-of-type(2n)
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  
   text-decoration: none;
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 20px;
-  padding: 8px 12px;
   position: relative;
-  bottom: 8px;
+
   width: 100%;
   text-align: center;
 }
